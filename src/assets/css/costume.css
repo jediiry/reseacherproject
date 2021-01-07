@@ -1,0 +1,211 @@
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.fade-enter-active {
+  animation: fade-in 1s;
+}
+.fade-leave-active {
+  animation: fade-in 0s reverse;
+}
+@keyframes fade-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('../font/Rubik-Medium.ttf');
+}
+body {
+  font-family: 'roboto' !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DA04F2;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.modal {
+  display: none;
+  animation: bounce-in 0.5s;
+}
+.dropdown {
+  display: none;
+  animation: bounce-in 0.5s;
+}
+.fade {
+  animation: fade-in 0.5s;
+}
+.mainfade {
+  animation: fade 0.5s;
+}
+.logo {
+  width: 10rem;
+}
+.menu .menu-item {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.menu .menu-item img {
+  margin-right: 1rem;
+  font-size: 1.3rem !important;
+}
+.menu .menu-item.active {
+  border-left: 5px solid #DA04F2;
+  background-color: #da04f21a;
+  color: #DA04F2;
+}
+.header {
+  height: 82px;
+  background-color: #f3f4f641;
+  display: grid;
+  align-items: center;
+}
+.headersearch {
+  display: flex;
+  width: 100%;
+  background-color: #FDFDFD;
+  padding: 0.8rem 0rem;
+  font-size: 1.3rem;
+  text-indent: 4rem;
+  border-radius: 10px;
+}
+.headersearch:focus {
+  outline: transparent;
+  background-color: white;
+}
+.mainsearch {
+  position: relative;
+}
+.mainsearch img {
+  position: absolute;
+  top: 30%;
+  left: 1rem;
+  height: 1.3rem;
+  width: 1.3rem;
+}
+.icon {
+  position: relative;
+}
+.icon .message {
+  height: 1.8rem;
+}
+.icon .oval {
+  position: absolute;
+  top: 2px;
+  right: 40%;
+  height: 0.8rem;
+}
+.avatar {
+  height: 50px;
+  width: 50px;
+}
+.greeting-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #2b2b2b;
+}
+.bg-light-gray {
+  background-color: #f3f4f641;
+}
+.pink {
+  color: #DA04F2;
+}
+.form-control {
+  margin: 15px 0px;
+  padding: 0.7rem;
+  color: #000;
+  display: block;
+  width: 100%;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+}
+.form-control:focus {
+  outline: none;
+}
+.custom-select {
+  padding: 0.7rem;
+  margin: 1rem 0;
+  background-color: #f3f4f641;
+  border-radius: 10px;
+}
+.custom-select select {
+  width: 100%;
+  background-color: transparent;
+}
+.custom-select select:focus {
+  outline: none;
+}
+.chatmenu {
+  display: flex;
+}
+.chatmenu .chatmenu-item {
+  margin: 0 2rem;
+  cursor: pointer;
+  padding-bottom: 0.7rem;
+}
+.chatmenu .active {
+  color: black;
+  font-weight: 600;
+  border-bottom: 3px solid black;
+}
+.chartmenu {
+  display: flex;
+}
+.chartmenu span {
+  display: flex;
+  margin: 0px 2rem;
+  background: #f3f4f641;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+}
+.chartmenu span img {
+  margin-right: 1rem;
+}
+.more:hover .notify {
+  display: block;
+}
+.more:active .notify {
+  display: block;
+}
+.more .notify {
+  display: none;
+}

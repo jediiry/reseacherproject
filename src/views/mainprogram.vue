@@ -2,21 +2,21 @@
   <div class="grid grid-cols-7 mainfade">
     <sidebar></sidebar>
     <div class="col-start-2 col-span-11">
-      <dashboard></dashboard>
+      <program></program>
     </div>
   </div>
 </template>
 
 <script>
-import dashboard from "../components/dashoard/dashboard.vue";
+import Program from "../components/program/program.vue";
 // @ is an alias to /src
-import Sidebar from "../components/sidebar/sidebar.vue";
+import sidebar from "../components/sidebar/sidebar.vue";
 
 export default {
-  name: "Home",
+  name: "mainprogram",
   components: {
-    Sidebar,
-    dashboard,
+    sidebar,
+    Program,
   },
 };
 </script>

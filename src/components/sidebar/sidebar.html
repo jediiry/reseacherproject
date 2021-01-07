@@ -1,0 +1,40 @@
+<div class="col-start-1 md:col-span-1 col-span-2 bg-gray-100 h-full">
+    <div class="grid grid-rows-4 grid-cols-1 gap-5">
+        <div class="row-span-1 flex justify-center items-center ">
+            <img class="logo" src="./../../assets//teklabspcelogo.png" alt="">
+        </div>
+        <div class="row-span-2">
+            <div class="menu">
+                <span class="menu-item" :class="{'active': currentRoute == ''}" @click="route('')">
+                    <img src="../../assets/icon/dashboard.svg" alt=""> Dashboard
+                </span>
+                <span class="menu-item">
+                    <img src="../../assets/icon/chat.svg" alt=""> Discovery
+                </span>
+                <span class="menu-item" @click="route('program')" :class="{'active': currentRoute == 'program'}">
+                    <img src="../../assets/icon/calender.svg" alt=""> Program
+                </span>
+                <span class="menu-item">
+                    <img src="../../assets/icon/file.svg" alt=""> Submission
+                </span>
+                <span class="menu-item">
+                    <img src="../../assets/icon/shop.svg" alt=""> Payment
+                </span>
+                <span class="menu-item">
+                    <img src="../../assets/icon/map.svg" alt=""> Leaders board
+                </span>
+                <span class="menu-item">
+                    <img src="../../assets/icon/circle.svg" alt=""> Crowd stream
+                </span>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <div class="menu">
+                <span class="menu-item ">
+                    <img src="../../assets/icon/logout.svg" alt=""> Logout
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div>
