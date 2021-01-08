@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="relative">
         <mainheader></mainheader>
         <div class="bg-light-gray pb-10">
             <div class="grid grid-cols-1 p-10">
@@ -151,7 +151,13 @@
             </div>
         </div>
 
-
+        <div id="myModal" class="modal block">
+            <!-- Modal content -->
+            <div class="modal-content relative">
+                <span class="close text-gray-400">&times;</span>
+                <h1 class="center_item text-2xl">Program Successfully Added</h1>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -184,7 +190,58 @@ select:focus,
 textarea:focus,
 button:focus,
 button:active
- {
+{
     outline: none;
+}
+
+.center_item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 </style>
