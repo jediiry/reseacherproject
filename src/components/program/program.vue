@@ -10,4 +10,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+ img.programList_avatar{
+  flex: 1 !important;
+}
+
+.programList_container {
+  flex: 3 !important;
+}
+</style>
