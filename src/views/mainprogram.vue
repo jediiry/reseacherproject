@@ -5,8 +5,8 @@
       <!-- <program></program> -->
       <!-- <program-two></program-two> -->
       <!-- <program-details></program-details> -->
-      <!-- <submit-program></submit-program> -->
-      <hanger></hanger>
+      <submit-program></submit-program>
+      <!-- <hanger></hanger> -->
     </div>
   </div>
 </template>
@@ -15,8 +15,8 @@
 // import Program from "../components/program/program.vue";
 // import ProgramTwo from "../components/program/program2.vue";
 // import programDetails from "../components/program/programDetails.vue";
-// import submitProgram from "../components/program/submitProgram.vue";
-import hanger from "../components/program/hanger.vue";
+import submitProgram from "../components/program/submitProgram.vue";
+// import hanger from "../components/program/hanger.vue";
 // @ is an alias to /src
 import sidebar from "../components/sidebar/sidebar.vue";
 
@@ -27,8 +27,8 @@ export default {
     // Program,
     // ProgramTwo,
     // programDetails,
-    // submitProgram,
-    hanger
+    submitProgram,
+    // hanger
   },
 };
 </script>
