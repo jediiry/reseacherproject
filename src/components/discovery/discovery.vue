@@ -1,0 +1,386 @@
+<template>
+    <div>
+        <mainheader></mainheader>
+        <div class="bg-light-gray pb-10">
+            <div class="grid grid-cols-1 p-10">
+                <div>
+                    <p class="greeting-title">Good Afternoon Lawal!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-10 pb-5">
+            <span class="text-2xl text-indigo-400 mr-6">Features</span>
+            <span class="text-2xl">Just for you</span>
+        </div>
+
+        <div class="px-10 mb-9">
+            <div class="flex justify-between mb-6">
+                <h1 class="text-xl">Staff Picks</h1>
+                <p class="text-indigo-600">See More</p>
+            </div>
+
+
+            <div class="grid grid-cols-6 gap-8">
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs"><span class="text-indigo-500"></span></p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - <span class="text-indigo-500">$25,000</span></p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+
+        <div class="px-10 mb-9">
+            <div class="flex justify-between mb-6">
+                <h1 class="text-xl">Need a P1 warrior</h1>
+                <p class="text-indigo-600">See More</p>
+            </div>
+
+
+            <div class="grid grid-cols-6 gap-8">
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs"><span class="text-indigo-500"></span></p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - <span class="text-indigo-500">$25,000</span></p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+
+
+        <div class="px-10 mb-9">
+            <div class="flex justify-between mb-6">
+                <h1 class="text-xl">New Scope & Increased Rewards</h1>
+                <p class="text-indigo-600">See More</p>
+            </div>
+
+
+            <div class="grid grid-cols-6 gap-8">
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs"><span class="text-indigo-500"></span></p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - <span class="text-indigo-500">$25,000</span></p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 flex flex-col">                    
+                    <div class="card h-full relative">
+                        <img src="../../assets/odin.jpg" alt="Avatar" style="width:100%">
+                        <div class="px-3 pt-4 pb-2">
+                            <h4 class="text-sm mb-2"><b>Kenna Security</b></h4>
+                            <p class="text-xs text-gray-500 mb-10">A Hosted Vulnerability Intelligence Platform</p>
+                            <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                                <p class="text-xs">$100 - $4,500</p>
+                                <div>
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                    <img  class="inline" src="../../assets/icon/shop.svg" alt=""> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+
+    </div> 
+</template>
+
+<script>
+import mainheader from "../header/header";
+
+export default {
+    name: 'discovery',
+    components: {
+        mainheader
+    }
+}
+</script>
+
+<style>
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+</style>

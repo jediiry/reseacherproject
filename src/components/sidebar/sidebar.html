@@ -8,7 +8,7 @@
                 <span class="menu-item" :class="{'active': currentRoute == ''}" @click="route('')">
                     <img src="../../assets/icon/dashboard.svg" alt=""> Dashboard
                 </span>
-                <span class="menu-item">
+                <span class="menu-item" @click="route('discovery')" :class="{'active': currentRoute == 'discovery'}">
                     <img src="../../assets/icon/chat.svg" alt=""> Discovery
                 </span>
                 <span class="menu-item" @click="route('program')" :class="{'active': currentRoute == 'program'}">

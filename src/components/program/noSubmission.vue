@@ -61,8 +61,13 @@
 </template>
 
 <script>
-export default {
+import mainheader from "../header/header";
 
+export default {
+    name: 'noSubmission',
+    components: {
+        mainheader
+    }
 }
 </script>
 

@@ -188,6 +188,7 @@
 <script>
 import Hall from "@/components/hall/hall.vue";
 import noitem from "../noitem/noitem";
+import mainheader from "../header/header";
 
 export default {
     name: 'hanger',
@@ -199,7 +200,8 @@ export default {
     },
     components: {
         Hall,
-        noitem
+        noitem,
+        mainheader
     },
 
 }

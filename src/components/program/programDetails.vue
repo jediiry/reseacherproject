@@ -276,11 +276,13 @@
 
 <script>
 import Hall from "@/components/hall/hall.vue";
+import mainheader from "../header/header";
 
 export default {
     name: 'programDetails',
     components: {
-        Hall
+        Hall,
+        mainheader
     }
 }
 </script>

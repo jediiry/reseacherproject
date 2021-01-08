@@ -144,8 +144,13 @@
 </template>
 
 <script>
-export default {
+import mainheader from "../header/header";
 
+export default {
+    name: 'program2',
+    components: {
+        mainheader
+    }
 }
 </script>
 

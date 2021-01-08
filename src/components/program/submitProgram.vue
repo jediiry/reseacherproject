@@ -163,11 +163,13 @@
 
 <script>
 // import Hall from "@/components/hall/hall.vue";
+import mainheader from "../header/header";
 
 export default {
     name: 'submitProgram',
     components: {
-        // Hall
+        // Hall,
+        mainheader
     }
 }
 </script>
