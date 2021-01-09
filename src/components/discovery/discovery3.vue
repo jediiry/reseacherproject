@@ -347,16 +347,5 @@ table.targets_table th {
   background-color: #f2f2f2;
 }
 
-.customBox_left{
-    flex: 2;
-}
-
-.customBox_right{
-    flex: 1;
-}
-
-.customBox_right img {
-    transform: translate(-50%, -50%);
-}
 
 </style>
