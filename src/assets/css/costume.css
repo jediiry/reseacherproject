@@ -209,3 +209,26 @@ body {
 .more .notify {
   display: none;
 }
+.center_item {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.active_tab {
+  border-bottom: 3px solid #df74fa;
+}
+.submission {
+  display: flex;
+  margin-top: 2rem;
+}
+.submission .item {
+  margin: 5px;
+  padding: 0.8rem 1.7rem;
+  background-color: #f3f4f641;
+  border-radius: 10px;
+}
+.submission .active {
+  background-color: white;
+  box-shadow: 1px 1px 5px #c9c9c9;
+  color: #DA04F2;
+}

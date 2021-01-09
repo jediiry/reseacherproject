@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import mainprogram from "../views/mainprogram";
 import maindiscovery from "../views/maindiscovery";
+import mainsubmission from "../views/mainsubmission";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/discovery",
     name: "maindiscovery",
     component: maindiscovery,
+  },
+  {
+    path: "/submission",
+    name: "submission",
+    component: mainsubmission,
   },
   {
     path: "/about",
