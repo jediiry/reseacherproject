@@ -104,11 +104,11 @@
                             Receive a notification for every successful payment
                         </p>
                         <div>
-                            <label for="toogleA" class="flex items-center cursor-pointer">
+                            <label for="toogleAB" class="flex items-center cursor-pointer">
                                 <!-- toggle -->
                                 <div class="relative">
                                 <!-- input -->
-                                <input id="toogleA" type="checkbox" class="hidden" />
+                                <input id="toogleAB" type="checkbox" class="hidden" />
                                 <!-- line -->
                                 <div
                                     class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
@@ -131,11 +131,11 @@
                             Receive a notification for every successful payment
                         </p>
                         <div>
-                            <label for="toogleA" class="flex items-center cursor-pointer">
+                            <label for="toogleAC" class="flex items-center cursor-pointer">
                                 <!-- toggle -->
                                 <div class="relative">
                                 <!-- input -->
-                                <input id="toogleA" type="checkbox" class="hidden" />
+                                <input id="toogleAC" type="checkbox" class="hidden" />
                                 <!-- line -->
                                 <div
                                     class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
@@ -158,11 +158,11 @@
                             Receive a notification for every successful payment
                         </p>
                         <div>
-                            <label for="toogleA" class="flex items-center cursor-pointer">
+                            <label for="toogleC" class="flex items-center cursor-pointer">
                                 <!-- toggle -->
                                 <div class="relative">
                                 <!-- input -->
-                                <input id="toogleA" type="checkbox" class="hidden" />
+                                <input id="toogleC" type="checkbox" class="hidden" />
                                 <!-- line -->
                                 <div
                                     class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
@@ -185,11 +185,11 @@
                             Receive a notification for every successful payment
                         </p>
                         <div>
-                            <label for="toogleA" class="flex items-center cursor-pointer">
+                            <label for="toogleC" class="flex items-center cursor-pointer">
                                 <!-- toggle -->
                                 <div class="relative">
                                 <!-- input -->
-                                <input id="toogleA" type="checkbox" class="hidden" />
+                                <input id="toogleC" type="checkbox" class="hidden" />
                                 <!-- line -->
                                 <div
                                     class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
@@ -205,140 +205,6 @@
                     </div>
                 </div>
 
-                <div class="border-b px-6 pt-6 pb-5">
-                    <h2 class="mb-2">Security treat</h2>
-                    <div class="flex justify-between">
-                        <p class="text-sm text-gray-500">
-                            Receive a notification for every successful payment
-                        </p>
-                        <div>
-                            <label for="toogleA" class="flex items-center cursor-pointer">
-                                <!-- toggle -->
-                                <div class="relative">
-                                <!-- input -->
-                                <input id="toogleA" type="checkbox" class="hidden" />
-                                <!-- line -->
-                                <div
-                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
-                                ></div>
-                                <!-- dot -->
-                                <div
-                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-                                ></div>
-                                </div>
-                                
-                            </label>                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="border-b px-6 pt-6 pb-5">
-                    <h2 class="mb-2">Security treat</h2>
-                    <div class="flex justify-between">
-                        <p class="text-sm text-gray-500">
-                            Receive a notification for every successful payment
-                        </p>
-                        <div>
-                            <label for="toogleA" class="flex items-center cursor-pointer">
-                                <!-- toggle -->
-                                <div class="relative">
-                                <!-- input -->
-                                <input id="toogleA" type="checkbox" class="hidden" />
-                                <!-- line -->
-                                <div
-                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
-                                ></div>
-                                <!-- dot -->
-                                <div
-                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-                                ></div>
-                                </div>
-                                
-                            </label>                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="border-b px-6 pt-6 pb-5">
-                    <h2 class="mb-2">Security treat</h2>
-                    <div class="flex justify-between">
-                        <p class="text-sm text-gray-500">
-                            Receive a notification for every successful payment
-                        </p>
-                        <div>
-                            <label for="toogleA" class="flex items-center cursor-pointer">
-                                <!-- toggle -->
-                                <div class="relative">
-                                <!-- input -->
-                                <input id="toogleA" type="checkbox" class="hidden" />
-                                <!-- line -->
-                                <div
-                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
-                                ></div>
-                                <!-- dot -->
-                                <div
-                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-                                ></div>
-                                </div>
-                                
-                            </label>                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="border-b px-6 pt-6 pb-5">
-                    <h2 class="mb-2">Security treat</h2>
-                    <div class="flex justify-between">
-                        <p class="text-sm text-gray-500">
-                            Receive a notification for every successful payment
-                        </p>
-                        <div>
-                            <label for="toogleA" class="flex items-center cursor-pointer">
-                                <!-- toggle -->
-                                <div class="relative">
-                                <!-- input -->
-                                <input id="toogleA" type="checkbox" class="hidden" />
-                                <!-- line -->
-                                <div
-                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
-                                ></div>
-                                <!-- dot -->
-                                <div
-                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-                                ></div>
-                                </div>
-                                
-                            </label>                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="border-b px-6 pt-6 pb-5">
-                    <h2 class="mb-2">Security treat</h2>
-                    <div class="flex justify-between">
-                        <p class="text-sm text-gray-500">
-                            Receive a notification for every successful payment
-                        </p>
-                        <div>
-                            <label for="toogleA" class="flex items-center cursor-pointer">
-                                <!-- toggle -->
-                                <div class="relative">
-                                <!-- input -->
-                                <input id="toogleA" type="checkbox" class="hidden" />
-                                <!-- line -->
-                                <div
-                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
-                                ></div>
-                                <!-- dot -->
-                                <div
-                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-                                ></div>
-                                </div>
-                                
-                            </label>                            
-                        </div>
-                    </div>
-                </div>
 
                 
                 
