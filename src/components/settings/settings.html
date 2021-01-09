@@ -11,16 +11,18 @@
                 <div class="grid grid-cols-2">
                     <div>
                         <div class="settingtab">
-                            <div class="item">
+                            <div class="item" :class="{'active': data == 'security'}"
+                                @click.prevent="settab('security')">
                                 Security
                             </div>
-                            <div class="item">
+                            <div class="item" :class="{'active': data == 'notification'}"
+                                @click.prevent="settab('notification')">
                                 Notification
                             </div>
-                            <div class="item">
+                            <div class="item" :class="{'active': data == 'payment'}" @click.prevent="settab('payment')">
                                 Payment
                             </div>
-                            <div class="item active">
+                            <div class="item" :class="{'active': data == 'profile'}" @click.prevent="settab('profile')">
                                 profile
                             </div>
                         </div>
@@ -32,7 +34,7 @@
                                 Close
                             </button>
                             <button type="button"
-                                class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                                class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-pink text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
                                 Update Setting
                             </button>
 
@@ -40,9 +42,412 @@
                     </div>
                 </div>
             </div>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi ipsa rerum suscipit? Soluta eum
-                adipisci, nostrum beatae repudiandae sint nihil esse iste laudantium quia. Cum repudiandae unde animi
-                at.</p>
+            <div class="p-10">
+                <div v-if="data == 'profile'">
+                    <div>
+                        <p>General Information</p>
+                    </div>
+                    <div class="border border-1 border-gray-200 mt-6 p-10 ">
+                        <div class="grid grid-cols-6">
+                            <div class="span-col-1">
+                                <div class="relative">
+                                    <img class="h-32 rounded-full"
+                                        src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/artistic-album-cover-design-template-d12ef0296af80b58363dc0deef077ecc_screen.jpg?ts=1561488440"
+                                        alt="">
+                                    <img class="bg-pink-600 p-2 rounded-full absolute right-20 bottom-2"
+                                        src="../../assets/icon/ico.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-xl">John Lawal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div>
+                                <label for="firstname"> Firstname</label>
+                                <input type="text" class="form-control" placeholder="John">
+                            </div>
+                            <div>
+                                <label for="firstname"> Lastname</label>
+                                <input type="text" class="form-control" placeholder="Lawal">
+                            </div>
+                            <div>
+                                <label for="firstname"> Lastname</label>
+                                <input type="text" class="form-control" placeholder="Lawal">
+                            </div>
+                            <div>
+                                <label for="firstname"> Email</label>
+                                <input type="text" class="form-control" placeholder="Enter your Email">
+                            </div>
+                            <div>
+                                <label for="firstname"> Language</label>
+                                <input type="text" class="form-control" placeholder="English">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div v-if="data == 'security'">
+                    <div>
+                        <div>
+                            <p class="text-gray-500">Security</p>
+                        </div>
+
+                        <hr class="w-full mt-3">
+                        <div class="mt-5">
+                            <div class="grid grid-cols-2 gap-5">
+                                <div>
+                                    <label for="firstname"> Current password</label>
+                                    <input type="text" class="form-control" placeholder="Enter your Password">
+                                </div>
+                                <div>
+                                    <label for="firstname"> New Passowrd</label>
+                                    <input type="text" class="form-control" placeholder="Enter New Password">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p class="text-gray-500">Security questions</p>
+                        </div>
+
+                        <hr class="w-full mt-3">
+                        <div class="mt-5">
+                            <div class="grid grid-cols-2 gap-5">
+                                <div>
+                                    <label for="firstname"> Question #1</label>
+                                    <input type="text" class="form-control" placeholder="What's your friend's name">
+                                </div>
+                                <div>
+                                    <label for="firstname"> Answer</label>
+                                    <input type="text" class="form-control" placeholder="John">
+                                </div>
+                                <div>
+                                    <label for="firstname"> Question #2</label>
+                                    <input type="text" class="form-control" placeholder="Please Select Questions">
+                                </div>
+                                <div>
+                                    <label for="firstname"> Answer</label>
+                                    <input type="text" class="form-control" placeholder="Enter your Answer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div v-if="data == 'notification'">
+                    <div>
+                        <div>
+                            <p class="text-gray-500">Security</p>
+                        </div>
+
+                        <hr class="w-full mt-3">
+                        <div class="mt-5">
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleeA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleeA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-b px-6 pt-6 pb-5">
+                                <h2 class="mb-2">Security treat</h2>
+                                <div class="flex justify-between">
+                                    <p class="text-sm text-gray-500">
+                                        Receive a notification for every successful payment
+                                    </p>
+                                    <div>
+                                        <label for="toogleA" class="flex items-center cursor-pointer">
+                                            <!-- toggle -->
+                                            <div class="relative">
+                                                <!-- input -->
+                                                <input id="toogleA" type="checkbox" class="hidden" />
+                                                <!-- line -->
+                                                <div
+                                                    class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
+                                                </div>
+                                                <!-- dot -->
+                                                <div
+                                                    class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0">
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
