@@ -143,36 +143,29 @@
                 </div>
                 <div class="px-10 fade" v-else>
                     <transition name="fade">
-                        <div class="my-10 fade">
-                            <div class="grid grid-cols-7 my-1 border-2 border-gray-200 p-10 rounded-md">
+                        <div class="grid grid-cols-7 my-8 border-2 border-gray-200 p-8 rounded-md">
                                 <div>
                                     <img src="../../assets/icon/pininterest.svg" class="h-32 " alt="">
                                 </div>
                                 <div class="col-span-6">
                                     <div class="flex flex-wrap justify-between">
                                         <div class="w-100">
-                                            <p class="text-xl">Disclosed report: [ExpressVPN Router] Integer Buffer Overflow: Server
+                                            <p class="text-xl mb-3">Disclosed report: [ExpressVPN Router] Integer Buffer Overflow: Server
                                                 Info
                                                 Disclosure When
                                                 Router's Nginx Server used as Reverse Proxy Server</p>
-                                            <p>By jaisharmaProgram ExpressVPN Priority P3</p>
+                                            <p class="text-sm text-gray-500">By jaisharmaProgram <span class="pink">ExpressVPN</span> Priority P3</p>
 
                                         </div>
                                         <div class="w-full mt-10">
-                                            <div class="flex justify-between">
-                                                <div class="">
-                                                    <span class="text-lg">Disclosed on 24 Nov 2020</span>
-                                                </div>
-                                                <div class="">
-                                                    <span class="text-lg text-red-300"> Pending</span>
-                                                </div>
+                                            <div>
+                                                <span class="text-lg">Disclosed on 24 Nov 2020</span>                                                
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-                            </div>                                
-                        </div>
+                            </div> 
                     </transition>
                 </div>
             </div>
