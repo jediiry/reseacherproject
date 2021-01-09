@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="hallOfFame_right relative">
-            <img class="absolute block top-1/2 left-1/2" :src="image" alt="">
+            <img class="absolute block top-1/2 left-1/2" src="../../assets/logo2.svg" alt="">
         </div>
     </div>
 </template>
@@ -37,11 +37,8 @@
 <script>
 export default {
     name: 'hall',
-    props: {
-        submitButton: false,
-        imageButton: false,
-        image: false
-    }
+    props: ['submitButton', 'imageButton']
+    
     
 }
 </script>

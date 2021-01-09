@@ -10,7 +10,8 @@
         </div>
 
         <div class="pl-2 pr-16">
-            <hall></hall>
+            <hall :submitButton="true" :imageButton="true"></hall>
+
             
             <div class="pl-5 pt-5 mt-10">
                 <div class="hallOfFame_tab flex flex-row mb-8">

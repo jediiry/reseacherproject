@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <hall :submitButton="true" :imageButton="true" :image="'./../../assets/logo2.svg'"></hall>
+        <hall :submitButton="true" :imageButton="true"></hall>
 
         <div class="p-4">
             <div class="hallOfFame_tab flex flex-row mb-10">
