@@ -51,23 +51,6 @@ export default {
 </script>
 
 <style>
-.hallOfFame_left{
-    flex: 2;
-}
-
-.hallOfFame_right{
-    flex: 1;
-}
-
-.hallOfFame_right img {
-    transform: translate(-50%, -50%);
-}
-
-.hallOfFame_footer_box {
-    flex: 1;
-}
-
-
 
 .active_tab{
     border-bottom: 3px solid #df74fa;
