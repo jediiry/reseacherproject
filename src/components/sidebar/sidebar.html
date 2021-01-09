@@ -1,4 +1,4 @@
-<div class="col-start-1 md:col-span-1 col-span-2 bg-gray-100 h-full">
+<div class="col-start-1 md:col-span-1 col-span-2 bg-gray-100 min-h-screen">
     <div class="grid grid-rows-4 grid-cols-1 gap-5">
         <div class="row-span-1 flex justify-center items-center ">
             <img class="logo" src="./../../assets//teklabspcelogo.png" alt="">
@@ -14,7 +14,7 @@
                 <span class="menu-item" @click="route('program')" :class="{'active': currentRoute == 'program'}">
                     <img src="../../assets/icon/calender.svg" alt=""> Program
                 </span>
-                <span class="menu-item">
+                <span class="menu-item" @click="route('submission')" :class="{'active': currentRoute == 'submission'}">
                     <img src="../../assets/icon/file.svg" alt=""> Submission
                 </span>
                 <span class="menu-item"  @click="route('payment')" :class="{'active': currentRoute == 'payment'}">
