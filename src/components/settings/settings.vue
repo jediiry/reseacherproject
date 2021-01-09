@@ -1,14 +1,7 @@
-<template src="./header.html"> </template>
+<template src="./settings.html"> </template>
 
 <script>
 export default {
-  name: "header",
-  data() {
-    return {
-      notify: false,
-      showmodal: false,
-    };
-  },
   methods: {
     route(param) {
       this.$store.state.active = param;

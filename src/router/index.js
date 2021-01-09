@@ -6,6 +6,7 @@ import maindiscovery from "../views/maindiscovery";
 import mainleadership from "../views/mainleadership";
 import mainpayment from "../views/mainpayment";
 import mainsubmission from "../views/mainsubmission";
+import mainsettings from "../views/mainsettings";
 
 Vue.use(VueRouter);
 
@@ -29,6 +30,11 @@ const routes = [
     path: "/leadership",
     name: "mainleadership",
     component: mainleadership,
+  },
+  {
+    path: "/settings",
+    name: "settings",
+    component: mainsettings,
   },
   {
     path: "/payment",
