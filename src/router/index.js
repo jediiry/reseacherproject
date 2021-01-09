@@ -7,6 +7,7 @@ import mainleadership from "../views/mainleadership";
 import mainpayment from "../views/mainpayment";
 import mainsubmission from "../views/mainsubmission";
 import mainsettings from "../views/mainsettings";
+import maincrowdstream from "../views/maincrowdstream";
 
 Vue.use(VueRouter);
 
@@ -45,6 +46,11 @@ const routes = [
     path: "/submission",
     name: "submission",
     component: mainsubmission,
+  },
+  {
+    path: "/crowdstream",
+    name: "crowdstream",
+    component: maincrowdstream,
   },
   {
     path: "/about",
