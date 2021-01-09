@@ -232,3 +232,13 @@ body {
   box-shadow: 1px 1px 5px #c9c9c9;
   color: #DA04F2;
 }
+.settingtab {
+  display: flex;
+}
+.settingtab .item {
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.settingtab .active {
+  border-bottom: 3px solid gray;
+}
