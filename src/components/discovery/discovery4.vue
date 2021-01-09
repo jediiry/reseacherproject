@@ -10,7 +10,7 @@
         </div>
 
         <div class="pl-2 pr-16 mb-6">
-            <div class="hallOfFame flex border border-gray-300 border-solid ml-2 mr-16">
+            <div class="hallOfFame flex border border-gray-300 border-solid ml-2 mr-16 rounded">
                 <div class="hallOfFame_left flex flex-col border-r border-gray-300 border-solid">
                     <div class="p-5 pb-20">
                         <h1 class="text-lg mb-2">LogicBoxes / OrderBox</h1>
@@ -113,24 +113,7 @@
                 </div>
 
 
-                <button class="bg-gray-200 border px-4 py-2 mb-4 rounded text-sm">
-                    <img class="inline" src="../../assets/icon/calender.svg" alt="">  Add attachments
-                </button>
-
-                <p class="text-xs text-gray-400 mb-4">You can attach multiple files (up to 20). Please keep individual upload size under 400MB.</p>
-                <p class="text-xs text-gray-400 mb-10 pb-20 border-b">
-                    You can embed image attachments (.jpg/.gif/.png, smaller than 2MB) into
-                    the Markdown fields. You can copy the embed code using the 'Copy as Markdown' button.
-                </p>
-
-                <div class="mb-5">
-                    <input type="checkbox" class="mr-4">
-                    <p class="inline text-sm">I have followed the <span class="font-bold">program brief</span> and agree to <span class="font-bold">Bugcrowd's terms & conditions</span></p>
-                </div>
-
-                <button class="bg-green-900 p-3 text-white text-sm font-bold rounded">
-                    Report vulnerability
-                </button>
+                
             </div>
 
             <div class="submitProgram-box3  col-span-1">
@@ -151,7 +134,56 @@
             </div>
         </div>
 
-       
+        <div class="grid grid-cols-4 gap-7 px-10 mb-10">
+            <div class="submitProgram-box1 col-span-1">
+                <h2 class="text-base mb-2 inline">Attachments </h2> <span class="text-xs text-gray-500">(optional)</span>
+                <p class="text-xs text-gray-500 mb-20">
+                    Attach proof-of-cencept scripts. screenshots, screen recordings, etc.
+                </p>
+
+                <h2 class="text-base mb-2">Confirmation</h2>
+                <p class="text-xs text-gray-500 mb-4">
+                    Confirm your submission adheres to:
+                </p>
+
+                <ul class="list-disc">
+                    <li class="text-xs pb-2">the <span class="text-blue-500"> program brief</span></li>
+                    <li class="text-xs pb-2">and <span class="text-blue-500"> Bugcrowd's terms & conditions</span></li>
+                </ul>
+            </div>
+
+            <div class="submitProgram-box2 col-span-2">
+                <button class="bg-gray-200 border px-4 py-2 mb-4 rounded text-sm">
+                    <img class="inline" src="../../assets/icon/calender.svg" alt="">  Add attachments
+                </button>
+
+                <p class="text-xs text-gray-400 mb-4">You can attach multiple files (up to 20). Please keep individual upload size under 400MB.</p>
+                <p class="text-xs text-gray-400 mb-10 pb-20 border-b">
+                    You can embed image attachments (.jpg/.gif/.png, smaller than 2MB) into
+                    the Markdown fields. You can copy the embed code using the 'Copy as Markdown' button.
+                </p>
+
+                <div class="mb-5">
+                    <input type="checkbox" class="mr-4">
+                    <p class="inline text-sm">I have followed the <span class="font-bold">program brief</span> and agree to <span class="font-bold">Bugcrowd's terms & conditions</span></p>
+                </div>
+
+                <button class="bg-green-900 p-3 text-white text-sm font-bold rounded">
+                    Report vulnerability
+                </button>
+            </div>
+
+            <div class="submitProgram-box2 col-span-1">
+            </div>
+        </div>
+
+        <div class="modal block">
+            <!-- Modal content -->
+            <div class="modal-content relative">
+                <span class="close text-gray-400">&times;</span>
+                <h1 class="center_item text-2xl">Program Successfully Added</h1>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -190,4 +222,54 @@ button:active
     outline: none;
 }
 
+.center_item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
