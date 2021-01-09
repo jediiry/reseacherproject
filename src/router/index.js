@@ -3,12 +3,9 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import mainprogram from "../views/mainprogram";
 import maindiscovery from "../views/maindiscovery";
-<<<<<<< HEAD
 import mainleadership from "../views/mainleadership";
 import mainpayment from "../views/mainpayment";
-=======
 import mainsubmission from "../views/mainsubmission";
->>>>>>> ea3fcd82e28b3cc42af2e9073426bc413fdb3809
 
 Vue.use(VueRouter);
 
@@ -29,7 +26,6 @@ const routes = [
     component: maindiscovery,
   },
   {
-<<<<<<< HEAD
     path: "/leadership",
     name: "mainleadership",
     component: mainleadership,
@@ -38,11 +34,11 @@ const routes = [
     path: "/payment",
     name: "mainpayment",
     component: mainpayment,
-=======
+  },
+  {
     path: "/submission",
     name: "submission",
     component: mainsubmission,
->>>>>>> ea3fcd82e28b3cc42af2e9073426bc413fdb3809
   },
   {
     path: "/about",

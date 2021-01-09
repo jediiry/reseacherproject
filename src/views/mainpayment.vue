@@ -11,7 +11,7 @@
 
 <script>
 
-import payment from "../components/payment/payment.vue";
+import Payment from "../components/payment/payment.vue";
 // import PaymentTwo from "../components/payment/payment2.vue";
 
 // @ is an alias to /src
@@ -21,7 +21,7 @@ export default {
   name: "maindiscovery",
   components: {
     sidebar,
-    payment,
+    Payment,
     // PaymentTwo,
 
   },
