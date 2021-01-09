@@ -10,8 +10,9 @@
         </div>
 
         <div class="pl-2 pr-16">
+            <hall :submitButton="true" :imageButton="true"></hall>
 
-            <div class="customBox flex border border-gray-300 border-solid ml-2 rounded">
+            <!-- <div class="customBox flex border border-gray-300 border-solid ml-2 rounded">
                 <div class="customBox_left flex flex-col border-r border-gray-300 border-solid">
                     <div class="p-5 pb-20">
                         <h1 class="text-lg mb-2">Bigbank</h1>
@@ -44,7 +45,7 @@
                     <img class="absolute block top-1/2 left-1/2" src="./../../assets//teklabspcelogo.png" alt="">
                     <button class="bg-indigo-900 text-white p-1 text-sm rounded absolute right-10 top-10">Submit Report</button>
                 </div>
-            </div>
+            </div> -->
 
             <div class="pl-5 pt-5 mt-10">
                 <div class="hallOfFame_tab flex flex-row mb-2">
@@ -316,11 +317,13 @@
 
 <script>
 import mainheader from "../header/header";
+import Hall from "@/components/hall/hall.vue";
 
 export default {
     name: 'discovery3',
     components: {
-        mainheader
+        mainheader,
+        Hall
     }
 }
 </script>
@@ -347,5 +350,15 @@ table.targets_table th {
   background-color: #f2f2f2;
 }
 
+.customBox_left{
+    flex: 2;
+}
 
+.customBox_right{
+    flex: 1;
+}
+
+.customBox_right img {
+    transform: translate(-50%, -50%);
+}
 </style>

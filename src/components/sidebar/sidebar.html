@@ -17,10 +17,10 @@
                 <span class="menu-item">
                     <img src="../../assets/icon/file.svg" alt=""> Submission
                 </span>
-                <span class="menu-item">
+                <span class="menu-item"  @click="route('payment')" :class="{'active': currentRoute == 'payment'}">
                     <img src="../../assets/icon/shop.svg" alt=""> Payment
                 </span>
-                <span class="menu-item">
+                <span class="menu-item" @click="route('leadership')" :class="{'active': currentRoute == 'leadership'}">
                     <img src="../../assets/icon/map.svg" alt=""> Leaders board
                 </span>
                 <span class="menu-item">

@@ -11,8 +11,6 @@
 
         <hall :submitButton="true" :imageButton="true"></hall>
 
-
-
         <div class="p-4">
             <div class="hallOfFame_tab flex flex-row mb-10">
                 <a href="" class="text-lg text-gray-400 mr-10 px-3">Program details</a>
@@ -114,32 +112,18 @@
 
 <script>
 import mainheader from "../header/header";
+import Hall from "@/components/hall/hall.vue";
 
 export default {
     name: 'discovery6',
     components: {
-        mainheader
+        mainheader,
+        Hall
     }
 }
 </script>
 
 <style>
-.hallOfFame_left{
-    flex: 2;
-}
-
-.hallOfFame_right{
-    flex: 1;
-}
-
-.hallOfFame_right img {
-    transform: translate(-50%, -50%);
-}
-
-.hallOfFame_footer_box {
-    flex: 1;
-}
-
 
 table.hallOfFame_table {
   border-collapse: collapse;

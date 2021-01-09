@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import mainprogram from "../views/mainprogram";
 import maindiscovery from "../views/maindiscovery";
+import mainleadership from "../views/mainleadership";
+import mainpayment from "../views/mainpayment";
 
 Vue.use(VueRouter);
 
@@ -21,6 +23,16 @@ const routes = [
     path: "/discovery",
     name: "maindiscovery",
     component: maindiscovery,
+  },
+  {
+    path: "/leadership",
+    name: "mainleadership",
+    component: mainleadership,
+  },
+  {
+    path: "/payment",
+    name: "mainpayment",
+    component: mainpayment,
   },
   {
     path: "/about",

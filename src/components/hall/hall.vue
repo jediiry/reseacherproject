@@ -30,6 +30,7 @@
         </div>
         <div class="hallOfFame_right relative">
             <img class="absolute block top-1/2 left-1/2" src="../../assets/logo2.svg" alt="">
+            <button v-if="imageButton" class="bg-indigo-900 text-white p-1 text-sm rounded absolute right-10 top-10">Submit Report</button>
         </div>
     </div>
 </template>
