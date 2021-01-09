@@ -8,33 +8,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="pl-2 pr-16 mb-6">
-            <div class="hallOfFame flex border border-gray-300 border-solid ml-2 mr-16">
-                <div class="hallOfFame_left flex flex-col border-r border-gray-300 border-solid">
-                    <div class="p-5 pb-20">
-                        <h1 class="text-lg mb-2">LogicBoxes / OrderBox</h1>
-                        <span class="text-xs text-gray-400 block">OrderBox VDP</span>
-                        <div class="mt-7 mb-3">
-                            <img  class="inline mr-2" src="../../assets/icon/shop.svg" alt=""> 
-                            <span class="mr-3">Points</span> 
-                            <span class="text-xs text-gray-400">Per vulnerability</span>
-                        </div>
-                        <div class="mb-1">
-                            <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
-                            <span>Partial safe harbour</span> 
-                        </div>
-                        <div>
-                            <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
-                            <span>Managed by Teklabspace</span> 
-                        </div>
-                    </div>
-                </div>
-                <div class="hallOfFame_right relative">
-                    <img class="absolute block top-1/2 left-1/2" src="./../../assets//teklabspcelogo.png" alt="">
-                </div>
-            </div>
-        </div>
+        <hall :submitButton="false" :imageButton="false"></hall>
+        
 
         <div class="grid grid-cols-4 gap-7 p-10">
             <div class="submitProgram-box1 col-span-1">
@@ -156,30 +131,19 @@
 </template>
 
 <script>
-// import Hall from "@/components/hall/hall.vue";
+import Hall from "@/components/hall/hall.vue";
 import mainheader from "../header/header";
 
 export default {
     name: 'submitProgram',
     components: {
-        // Hall,
+        Hall,
         mainheader
     }
 }
 </script>
 
 <style>
-.hallOfFame_left{
-    flex: 2;
-}
-
-.hallOfFame_right{
-    flex: 1;
-}
-
-.hallOfFame_right img {
-    transform: translate(-50%, -50%);
-}
 
 input:focus,
 select:focus,
