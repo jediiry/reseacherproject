@@ -1,6 +1,7 @@
 <template>
   <div class="grid grid-cols-7 mainfade">
     <sidebar></sidebar>
+
     <div class="col-start-2 col-span-11">
       <dashboard></dashboard>
     </div>

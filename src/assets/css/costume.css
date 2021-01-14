@@ -41,14 +41,14 @@
 }
 @font-face {
   font-family: 'roboto';
-  src: url('../font/Rubik-Medium.ttf');
+  src: url('../font/Rubik-Light.ttf');
 }
 body {
   font-family: 'roboto' !important;
   box-sizing: border-box !important;
   margin: 0 !important;
   padding: 0 !important;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 ::-webkit-scrollbar {
   width: 5px;
