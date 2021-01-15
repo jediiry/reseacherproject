@@ -9,7 +9,7 @@
 
 
         <!-- first session -->
-        <div class="grid grid-cols-2 gap-5 px-10 ">
+        <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-5 px-10">
             <div class="bg-white shadow-md rounded-md">
                 <div class="grid grid-cols-3 bg-gray-100 justify-center">
                     <div class="text-center cursor-pointer p-5 font-bold" :class="{'bg-white': reward, 'pink' : reward}"
@@ -180,27 +180,26 @@
                             <div v-if="currentTask == 'all'">
                                 <transition name="fade">
                                     <div>
-                                        <div
-                                            class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
-                                            <div class="grid grid-cols-12 mb-3">
-                                                <div>
+                                        <div class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
+                                            <div class="flex mb-3 taskitem">
+                                                <div class="">
                                                     <div
                                                         class="flex justify-center items-center h-8 w-8 rounded-full bg-pink-200">
                                                         <img src="../../assets/icon/arrow-down-right.svg" alt="">
                                                     </div>
                                                 </div>
-                                                <div class="col-span-10">
-                                                    <p class="font-bold text-lg">Submission of Zenith Bank Report</p>
+                                                <div class="">
+                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission of Zenith Bank Report</p>
                                                     <p class="text-xs">2020-12-24</p>
                                                 </div>
-                                                <div class="flex justify-end">
+                                                <div class="flex justify-end ">
                                                     <img src="../../assets/icon/Vector.svg" alt="">
                                                 </div>
 
                                             </div>
 
                                             <div>
-                                                <p class="text-sm mt-3">
+                                                <p class="xs:text-sm md:text-xs lg:text-sm mt-3">
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
                                                     illo.
                                                     Amet
@@ -215,65 +214,60 @@
                                             </div>
                                         </div>
                                         <div class="mt-2  rounded-md p-5 divide-y divide-solid divide-gray-200">
-                                            <div class="grid grid-cols-12 mb-3">
-                                                <div>
+                                            <div class="grid grid-cols-12 mb-3">                                                
+                                                <div class="sm:col-span-1 md:col-span-1 lg:col-span-2">
                                                     <div
                                                         class="flex justify-center items-center h-8 w-8 rounded-full bg-pink-200">
                                                         <img src="../../assets/icon/arrow-down-right.svg" alt="">
                                                     </div>
                                                 </div>
-                                                <div class="col-span-10">
-                                                    <p class="font-bold text-lg">Submission of Zenith Bank Report</p>
+                                                <div class="sm:col-span-10 md:col-span-10 lg:col-span-8">
+                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission of Zenith Bank Report</p>
                                                     <p class="text-xs">2020-12-24</p>
                                                 </div>
-                                                <div class="flex justify-end">
+                                                <div class="flex justify-end sm:col-span-1 md:col-span-1 lg:col-span-2">
                                                     <img src="../../assets/icon/Vectorarrowfront.svg" alt="">
                                                 </div>
 
                                             </div>
-
-
                                         </div>
                                         <div class="mt-2  rounded-md p-5 divide-y divide-solid divide-gray-200">
-                                            <div class="grid grid-cols-12 mb-3">
-                                                <div>
+                                            <div class="grid grid-cols-12 mb-3">                                                
+                                                <div class="sm:col-span-1 md:col-span-1 lg:col-span-2">
                                                     <div
                                                         class="flex justify-center items-center h-8 w-8 rounded-full bg-pink-200">
                                                         <img src="../../assets/icon/arrow-down-right.svg" alt="">
                                                     </div>
                                                 </div>
-                                                <div class="col-span-10">
-                                                    <p class="font-bold text-lg">Submission of Zenith Bank Report</p>
+                                                <div class="sm:col-span-10 md:col-span-10 lg:col-span-8">
+                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission of Zenith Bank Report</p>
                                                     <p class="text-xs">2020-12-24</p>
                                                 </div>
-                                                <div class="flex justify-end">
+                                                <div class="flex justify-end sm:col-span-1 md:col-span-1 lg:col-span-2">
                                                     <img src="../../assets/icon/Vectorarrowfront.svg" alt="">
                                                 </div>
 
                                             </div>
-
-
                                         </div>
                                         <div class="mt-2  rounded-md p-5 divide-y divide-solid divide-gray-200">
-                                            <div class="grid grid-cols-12 mb-3">
-                                                <div>
+                                            <div class="grid grid-cols-12 mb-3">                                                
+                                                <div class="sm:col-span-1 md:col-span-1 lg:col-span-2">
                                                     <div
                                                         class="flex justify-center items-center h-8 w-8 rounded-full bg-pink-200">
                                                         <img src="../../assets/icon/arrow-down-right.svg" alt="">
                                                     </div>
                                                 </div>
-                                                <div class="col-span-10">
-                                                    <p class="font-bold text-lg">Submission of Zenith Bank Report</p>
+                                                <div class="sm:col-span-10 md:col-span-10 lg:col-span-8">
+                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission of Zenith Bank Report</p>
                                                     <p class="text-xs">2020-12-24</p>
                                                 </div>
-                                                <div class="flex justify-end">
+                                                <div class="flex justify-end sm:col-span-1 md:col-span-1 lg:col-span-2">
                                                     <img src="../../assets/icon/Vectorarrowfront.svg" alt="">
                                                 </div>
 
                                             </div>
-
-
                                         </div>
+                                        
                                     </div>
                                 </transition>
                             </div>
