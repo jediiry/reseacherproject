@@ -1,4 +1,4 @@
-<div>
+<div class="fade">
     <mainheader></mainheader>
     <div class="bg-light-gray pb-10">
         <div class="grid grid-cols-1 p-10">
@@ -7,9 +7,10 @@
             </div>
         </div>
         <div class="px-10">
-            <div class="programList flex shadow-md mb-5 rounded-l-lg">
+            <div class="programList flex shadow-md mb-5 rounded-l-lg" @dblclick.prevent="details">
                 <div class="programList_avatar">
-                    <img class="programList_avatar rounded-l-lg" src="../../assets/image1.jpg" alt="">
+                    <img class="programList_avatar rounded-l-lg" style="width: 210px;"
+                        src="https://i.pinimg.com/originals/60/f5/50/60f5502ab9f90dde30cd8131ccec7948.png" alt="">
                 </div>
                 <div class="p-10 programList_container grid grid-cols-3 gap-4">
                     <div class="flex flex-col justify-between">
@@ -43,9 +44,11 @@
                 </div>
             </div>
 
-            <div class="programList flex shadow-md mb-5 rounded-l-lg">
+            <div class="programList flex shadow-md mb-5 rounded-l-lg" @dblclick.prevent="details">
                 <div class="programList_avatar">
-                    <img class="w-full rounded-l-lg" src="../../assets/image2.jpg" alt="">
+                    <img class="w-full rounded-l-lg" style="width: 210px;"
+                        src="https://cms-assets.tutsplus.com/uploads/users/1990/posts/33313/final_image/electro-beats-album-cover-design-template-469c.jpg"
+                        alt="">
                 </div>
                 <div class="p-10 programList_container grid grid-cols-3 gap-4">
                     <div class="flex flex-col justify-between">
@@ -57,15 +60,128 @@
                     </div>
                     <div class="programList_grid flex justify-end flex-col"></div>
                     <div class="programList_grid flex flex-col justify-between items-end">
-                        <span class="text-indigo-500 text-xs">Recent</span>
-                        <span class="text-yellow-400 text-sm">Learn more</span>
+                        <span class="font-bold pink text-xs">Recent</span>
+                        <span class="text-yellow-400 font-bold text-sm">Learn more</span>
                     </div>
                 </div>
             </div>
 
-            <div class="programList flex shadow-md mb-5 rounded-l-lg">
+            <div class="programList flex shadow-md mb-5 rounded-l-lg" @dblclick.prevent="details">
                 <div class="programList_avatar">
-                    <img class="programList_avatar rounded-l-lg" src="../../assets/image1.jpg" alt="">
+                    <img class="programList_avatar rounded-l-lg" style="width: 210px;"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4bb82b72535211.5bead62fe26d5.jpg"
+                        alt="">
+                </div>
+                <div class="p-10 programList_container grid grid-cols-3 gap-4">
+                    <div class="flex flex-col justify-between">
+                        <div class="flex flex-col">
+                            <h5 class="mb-1 text-lg">Host Gator LATAM</h5>
+                            <span class="text-xs text-gray-400">Host Gator LATAM</span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-3">
+                                <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
+                                <span class="text-xs text-gray-400">Partial safe harbour</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
+                                <span class="text-xs text-gray-400">Managed by Bugcrowd</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="programList_grid flex justify-end flex-col">
+                        <div class="flex mb-3">
+                            <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
+                            <span class="block text-xs text-gray-400">$150 - $2,500</span>
+                        </div>
+                        <span class="ml-5 text-xs text-gray-400">Per Vulnerability</span>
+                    </div>
+                    <div class="programList_grid flex flex-col justify-between items-end">
+                        <span class="text-indigo-500 text-xs">Recent</span>
+                        <span class="text-indigo-500 text-sm">Submit Report</span>
+                    </div>
+                </div>
+            </div>
+            <div class="programList flex shadow-md mb-5 rounded-l-lg" @dblclick.prevent="details">
+                <div class="programList_avatar">
+                    <img class="programList_avatar rounded-l-lg" style="width: 210px;"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4bb82b72535211.5bead62fe26d5.jpg"
+                        alt="">
+                </div>
+                <div class="p-10 programList_container grid grid-cols-3 gap-4">
+                    <div class="flex flex-col justify-between">
+                        <div class="flex flex-col">
+                            <h5 class="mb-1 text-lg">Host Gator LATAM</h5>
+                            <span class="text-xs text-gray-400">Host Gator LATAM</span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-3">
+                                <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
+                                <span class="text-xs text-gray-400">Partial safe harbour</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
+                                <span class="text-xs text-gray-400">Managed by Bugcrowd</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="programList_grid flex justify-end flex-col">
+                        <div class="flex mb-3">
+                            <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
+                            <span class="block text-xs text-gray-400">$150 - $2,500</span>
+                        </div>
+                        <span class="ml-5 text-xs text-gray-400">Per Vulnerability</span>
+                    </div>
+                    <div class="programList_grid flex flex-col justify-between items-end">
+                        <span class="text-indigo-500 text-xs">Recent</span>
+                        <span class="text-indigo-500 text-sm">Submit Report</span>
+                    </div>
+                </div>
+            </div>
+            <div class="programList flex shadow-md mb-5 rounded-l-lg" @dblclick.prevent="details">
+                <div class="programList_avatar">
+                    <img class="programList_avatar rounded-l-lg" style="width: 210px;"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4bb82b72535211.5bead62fe26d5.jpg"
+                        alt="">
+                </div>
+                <div class="p-10 programList_container grid grid-cols-3 gap-4">
+                    <div class="flex flex-col justify-between">
+                        <div class="flex flex-col">
+                            <h5 class="mb-1 text-lg">Host Gator LATAM</h5>
+                            <span class="text-xs text-gray-400">Host Gator LATAM</span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-3">
+                                <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
+                                <span class="text-xs text-gray-400">Partial safe harbour</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
+                                <span class="text-xs text-gray-400">Managed by Bugcrowd</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="programList_grid flex justify-end flex-col">
+                        <div class="flex mb-3">
+                            <img class="inline mr-2" src="../../assets/icon/circle.svg" alt="">
+                            <span class="block text-xs text-gray-400">$150 - $2,500</span>
+                        </div>
+                        <span class="ml-5 text-xs text-gray-400">Per Vulnerability</span>
+                    </div>
+                    <div class="programList_grid flex flex-col justify-between items-end">
+                        <span class="text-indigo-500 text-xs">Recent</span>
+                        <span class="text-indigo-500 text-sm">Submit Report</span>
+                    </div>
+                </div>
+            </div>
+            <div class="programList flex shadow-md mb-5 rounded-l-lg" @dblclick.prevent="details">
+                <div class="programList_avatar">
+                    <img class="programList_avatar rounded-l-lg" style="width: 210px;"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4bb82b72535211.5bead62fe26d5.jpg"
+                        alt="">
                 </div>
                 <div class="p-10 programList_container grid grid-cols-3 gap-4">
                     <div class="flex flex-col justify-between">

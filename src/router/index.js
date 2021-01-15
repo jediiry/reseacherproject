@@ -8,6 +8,8 @@ import mainpayment from "../views/mainpayment";
 import mainsubmission from "../views/mainsubmission";
 import mainsettings from "../views/mainsettings";
 import maincrowdstream from "../views/maincrowdstream";
+import programdetails from "../views/programdetails";
+import submitprogram from "../views/submitprogram";
 
 Vue.use(VueRouter);
 
@@ -26,6 +28,16 @@ const routes = [
     path: "/discovery",
     name: "maindiscovery",
     component: maindiscovery,
+  },
+  {
+    path: "/program/details",
+    name: "programdetails",
+    component: programdetails,
+  },
+  {
+    path: "/program/submit",
+    name: "submitprogram",
+    component: submitprogram,
   },
   {
     path: "/leadership",

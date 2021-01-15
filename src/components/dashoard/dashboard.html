@@ -1,4 +1,4 @@
-<div>
+<div class="min-h-screen fade">
     <mainheader></mainheader>
     <div class="bg-light-gray pb-10">
         <div class="grid grid-cols-1 p-10">
@@ -11,7 +11,7 @@
         <!-- first session -->
         <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-5 px-10">
             <div class="bg-white shadow-md rounded-md">
-                <div class="grid grid-cols-3 bg-gray-100 justify-center">
+                <div class="grid grid-cols-5 bg-gray-100 justify-center">
                     <div class="text-center cursor-pointer p-5 font-bold" :class="{'bg-white': reward, 'pink' : reward}"
                         @click="reward = true">
                         Reward
@@ -156,7 +156,7 @@
 
                 </div>
             </div>
-            <div class="bg-white rounded-md p-10">
+            <div class="bg-white shadow-md rounded-md p-10">
                 <div class="grid grid-cols-8">
                     <div @click="currentsession = true">
                         <span class="font-bold cursor-pointer" :class="{'pink': currentsession}">Task</span>
@@ -467,7 +467,7 @@
         <!-- seciond Session -->
         <div class="grid grid-cols-1 gap-5 px-10 mt-7 ">
 
-            <div class="bg-white rounded-md p-10 divide-y divide-solid divide-gray-200">
+            <div class="bg-white shadow-md rounded-md p-10 divide-y divide-solid divide-gray-200">
                 <div class="grid grid-cols-8 ">
                     <div class="col-span-4">
                         <span class="font-bold">Activity Summary</span>
