@@ -13,7 +13,7 @@
             <hall :submitButton="false" :imageButton="false"></hall>
         </div>
 
-        <div class="grid auto-rows-auto sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-7 p-10">
+        <div class="grid auto-rows-auto sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-7 p-7 lg:p-10">
             <div class="submitProgram-box1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
                 <h2 class="text-base mb-2">Summary title</h2>
                 <p class="text-xs text-gray-600 mb-8">Help us get an idea of what this vulnerability is about.</p>
