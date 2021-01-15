@@ -2,7 +2,7 @@
   <div class="grid grid-cols-7 mainfade">
     <sidebar></sidebar>
     <div class="col-start-2 col-span-11 main_content">
-      <!-- <program></program> -->
+      <program></program>
       <!-- <program-two></program-two> -->
       <!-- <program-details></program-details> -->
       <!-- <submit-program></submit-program> -->
