@@ -95,4 +95,34 @@ export default {
 .hallOfFame_right img {
   transform: translate(-50%, -50%);
 }
+
+@media only screen and (max-width: 31.25em) { /** 500px / 16 */
+  .hallOfFame_footer {
+    flex-direction: column;
+  }
+  
+  .hallOfFame_footer > :nth-child(2){
+    padding-top: 12px;
+    justify-content: space-between;
+  }
+  .hallOfFame_footer > :nth-child(1) button{
+    width: 100%;
+  }
+
+  .hallOfFame_footer > :nth-child(2) > img:nth-child(2){
+    margin-left: 0; 
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) { /** 600px / 16 */
+  .hallOfFame_right img{
+    width: 50%;
+  }
+  .hallOfFame_right button{
+    right: 10%;
+    font-size: 11px;
+  }
+}
+
 </style>

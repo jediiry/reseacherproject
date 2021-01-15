@@ -13,8 +13,8 @@
             <hall :submitButton="false" :imageButton="false"></hall>
         </div>
 
-        <div class="grid grid-cols-4 gap-7 p-10">
-            <div class="submitProgram-box1 col-span-1">
+        <div class="grid auto-rows-auto sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-7 p-10">
+            <div class="submitProgram-box1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
                 <h2 class="text-base mb-2">Summary title</h2>
                 <p class="text-xs text-gray-600 mb-8">Help us get an idea of what this vulnerability is about.</p>
 
@@ -36,7 +36,7 @@
 
             </div>
 
-            <div class="submitProgram-box2  col-span-2">
+            <div class="submitProgram-box2  xl:col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-2">
                 <input type="text" class="w-full p-3 border mb-16" placeholder="Provide summary title">
                 <select name="target" class="w-full p-3 border mb-20">
                     <option value="">Select target</option>
@@ -93,7 +93,7 @@
                 
             </div>
 
-            <div class="submitProgram-box3  col-span-1">
+            <div class="submitProgram-box3 sm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-1">
                 <div class="p-4 mb-4 border rounded">
                     <h2 class="text-lg font-bold">Program Rules</h2>
                     <span class="text-xs">Please familiarize yourself with Bugcrowd's <span class="text-blue-500"> standard disclosure terms.</span> </span>
@@ -111,8 +111,8 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-4 gap-7 px-10 mb-10">
-            <div class="submitProgram-box1 col-span-1">
+        <div class="grid md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-7 px-10 mb-10">
+            <div class="submitProgram-box1 md:col-span-2 lg:col-span-1 xl:col-span-1">
                 <h2 class="text-base mb-2 inline">Attachments </h2> <span class="text-xs text-gray-500">(optional)</span>
                 <p class="text-xs text-gray-500 mb-20">
                     Attach proof-of-cencept scripts. screenshots, screen recordings, etc.
@@ -129,7 +129,7 @@
                 </ul>
             </div>
 
-            <div class="submitProgram-box2 col-span-2">
+            <div class="submitProgram-box2 md:col-span-2 lg:col-span-2 xl:col-span-2">
                 <button class="bg-gray-200 border px-4 py-2 mb-4 rounded text-sm">
                     <img class="inline" src="../../assets/icon/calender.svg" alt="">  Add attachments
                 </button>
