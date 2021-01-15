@@ -23,4 +23,26 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+  .taskitem > :nth-child(1),
+  .taskitem > :nth-child(3)
+  {
+    flex: 1;
+  }
+
+  .taskitem > :nth-child(2){
+    flex: 7;
+  }
+
+@media only screen and (max-width: 63.94em) { /** 1023px / 16 */
+  .taskitem > :nth-child(1),
+  .taskitem > :nth-child(3)
+  {
+    flex: 1;
+  }
+
+  .taskitem > :nth-child(2){
+    flex: 11;
+  }
+}
+</style>

@@ -85,7 +85,14 @@
         </div>
     </modal>
     <div class="grid grid-cols-9 items-center">
-        <div class="col-span-6 p-2">
+        <div class="col-span-6 p-2 nav_searchbox">
+            <div class="menu-iconbox" @click="toggleMenu">
+                <div class="menu-icon">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+            </div>
             <div class="mainsearch">
                 <img src="../../assets//icon/searchicon.svg" alt="">
                 <input type="text" placeholder="Search" class="headersearch">
@@ -111,7 +118,7 @@
                         alt="">
                 </div>
                 <div class="col-span-3 ml-2">
-                    <span class="text-lg">John Lawal</span> <br>
+                    <span class="sm:text-sm xl:text-lg">John Lawal</span> <br>
                     <span class="text-xs">User</span>
                 </div>
                 <div>
