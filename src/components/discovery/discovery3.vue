@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="pl-2 pr-16">
+        <div class="pl-2 xs:pr-5 md:pr-16">
             <hall :submitButton="true" :imageButton="true"></hall>
 
             <!-- <div class="customBox flex border border-gray-300 border-solid ml-2 rounded">
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-3 discovery_norecent">
                 <div class="col-span-2 mt-8 px-6">
                     <p class="text-sm text-gray-400 mb-5">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem porro vero, ut praesentium tempore minima debitis, unde suscipit consectetur animi temporibus ex eos.
@@ -91,88 +91,92 @@
 
                     <h2 class="mb-5 text-2xl">Targets</h2>
                     <h3 class="mb-3">In scope</h3>
-                    <table class="targets_table mb-10">
-                        <thead>
-                            <tr>
-                                <th class="text-gray-700 text-xs">Target name</th>
-                                <th class="text-gray-700 text-xs">Type</th>
-                                <th class="text-gray-700 text-xs">Tags</th>
-                                <th class="text-gray-700 text-xs">Known issues</th>
-                                <th class="text-gray-700 text-xs">Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-gray-700 text-xs">manage.logiboxes.com</td>
-                                <td class="text-gray-700 text-xs">Website Testing</td>
-                                <td class="text-gray-700 flex-wrap flex">
-                                    <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Website Testing</span>                                                                        
-                                </td>
-                                <td class="text-gray-700 text-xs">1 unique</td>
-                                <td>
-                                    <button>o</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-gray-700 text-xs">httpi.com</td>
-                                <td class="text-gray-700 text-xs">Website Testing</td>
-                                <td class="text-gray-700 flex-wrap flex">
-                                    <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">API Testing</span>
-                                    <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Java</span>
-                                    <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Jquery</span>                                    
-                                </td>
-                                <td class="text-gray-700 text-xs">None known</td>
-                                <td>
-                                    <button>o</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-gray-700 text-xs">manage.logiboxes.com</td>
-                                <td class="text-gray-700 text-xs">Website Testing</td>
-                                <td class="text-gray-700 flex-wrap flex">
-                                    <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Website Testing</span>                                                                        
-                                </td>
-                                <td class="text-gray-700 text-xs">None known</td>
-                                <td>
-                                    <button>o</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-gray-700 text-xs">httpi.com</td>
-                                <td class="text-gray-700 text-xs">Website Testing</td>
-                                <td class="text-gray-700 flex-wrap flex">
-                                    <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Vue.js</span>
-                                    <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">NodeJs</span>
-                                    <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Website Testing</span>                                    
-                                </td>
-                                <td class="text-gray-700 text-xs">None known</td>
-                                <td>
-                                    <button>o</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="overflow-x-auto mb-10">
+                        <table class="targets_table">
+                            <thead>
+                                <tr>
+                                    <th class="text-gray-700 text-xs">Target name</th>
+                                    <th class="text-gray-700 text-xs">Type</th>
+                                    <th class="text-gray-700 text-xs">Tags</th>
+                                    <th class="text-gray-700 text-xs">Known issues</th>
+                                    <th class="text-gray-700 text-xs">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-gray-700 text-xs">manage.logiboxes.com</td>
+                                    <td class="text-gray-700 text-xs">Website Testing</td>
+                                    <td class="text-gray-700 flex-wrap flex">
+                                        <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Website Testing</span>                                                                        
+                                    </td>
+                                    <td class="text-gray-700 text-xs">1 unique</td>
+                                    <td>
+                                        <button>o</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-gray-700 text-xs">httpi.com</td>
+                                    <td class="text-gray-700 text-xs">Website Testing</td>
+                                    <td class="text-gray-700 flex-wrap flex">
+                                        <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">API Testing</span>
+                                        <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Java</span>
+                                        <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Jquery</span>                                    
+                                    </td>
+                                    <td class="text-gray-700 text-xs">None known</td>
+                                    <td>
+                                        <button>o</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-gray-700 text-xs">manage.logiboxes.com</td>
+                                    <td class="text-gray-700 text-xs">Website Testing</td>
+                                    <td class="text-gray-700 flex-wrap flex">
+                                        <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Website Testing</span>                                                                        
+                                    </td>
+                                    <td class="text-gray-700 text-xs">None known</td>
+                                    <td>
+                                        <button>o</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-gray-700 text-xs">httpi.com</td>
+                                    <td class="text-gray-700 text-xs">Website Testing</td>
+                                    <td class="text-gray-700 flex-wrap flex">
+                                        <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Vue.js</span>
+                                        <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">NodeJs</span>
+                                        <span class="rounded-l-lg bg-gray-300 p-2 text-gray-700 text-xs mr-2 my-1">Website Testing</span>                                    
+                                    </td>
+                                    <td class="text-gray-700 text-xs">None known</td>
+                                    <td>
+                                        <button>o</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
 
                     <h3 class="mb-5 ">Out scope</h3>
-                    <table class="targets_table">
-                        <thead>
-                            <tr>
-                                <th class="text-gray-700 text-xs">Target name</th>
-                                <th class="text-gray-700 text-xs">Type</th>                                
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-gray-700 text-xs">Any subdomain of bigbank. * not explicitly listed as "In Scope"</td>
-                                <td class="text-gray-700 text-xs">any Github asset under https://github.com/bigbank-as</td>                                
-                            </tr>
-                            <tr>
-                                <td class="text-gray-700 text-xs">Any sites which resolve to 185.235.160.18</td>
-                                <td class="text-gray-700 text-xs">DMARC // SPF</td>
-                            </tr>                            
-                        </tbody>
-                    </table>
+                    <div class="overflow-x-auto">
+                        <table class="targets_table">
+                            <thead>
+                                <tr>
+                                    <th class="text-gray-700 text-xs">Target name</th>
+                                    <th class="text-gray-700 text-xs">Type</th>                                
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-gray-700 text-xs">Any subdomain of bigbank. * not explicitly listed as "In Scope"</td>
+                                    <td class="text-gray-700 text-xs">any Github asset under https://github.com/bigbank-as</td>                                
+                                </tr>
+                                <tr>
+                                    <td class="text-gray-700 text-xs">Any sites which resolve to 185.235.160.18</td>
+                                    <td class="text-gray-700 text-xs">DMARC // SPF</td>
+                                </tr>                            
+                            </tbody>
+                        </table>        
+                    </div>
                     <span class="text-xs text-gray-700">2 known issues on unspecified targets.</span>
                     
                     <p class="text-base my-20 text-gray-700">
@@ -360,5 +364,30 @@ table.targets_table th {
 
 .customBox_right img {
     transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 52.19em) { /** 835px / 16 */
+
+    .discovery_norecent{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .discovery_norecent > :nth-child(1){
+        grid-column: span 1;
+    }
+
+    .discovery_norecent > :nth-child(2){
+        grid-column: span 1;
+        margin-top: 4rem;
+        padding: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 44.69em) { /** 715px / 16 */
+    .hallOfFame_tab a {
+        font-size: 16px;
+    }
 }
 </style>

@@ -22,9 +22,18 @@ export default {
 </script>
 
 <style>
+.nav_searchbox {
+  display: flex;
+}
+
 .menu-iconbox{
   display: none;
   margin-left: 10px;
+  flex: 1;
+}
+
+.mainsearch{
+  flex: 11;
 }
 
 .menu-icon {
@@ -79,6 +88,14 @@ export default {
   width: 55px;
 }
 
+.mobile_bio{
+  display: none;
+}
+
+.menuside_options > * {
+  flex: 1;
+}
+
 @media only screen and (max-width: 75em) { /** 1200px / 16 */
   .nav_searchbox {
     display: flex;
@@ -86,6 +103,16 @@ export default {
   }
 
   .menu-iconbox{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 55.375em) { /** 886px / 16 */
+  .user_bio{
+    display: none;
+  }
+
+  .mobile_bio{
     display: block;
   }
 }

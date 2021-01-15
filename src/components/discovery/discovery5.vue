@@ -9,17 +9,18 @@
             </div>
         </div>
 
-        <div class="pl-2 pr-16">
+        <div class="pl-2 md:pr-5 lg:pr-16">
 
             <hall :submitButton="true" :imageButton="true"></hall>
 
-            <div class="px-5 w-3/4">
+            <div class="px-5 md:w-full lg:w-3/4">
                 <div class="pt-5 mt-10">
-                    <div class="hallOfFame_tab flex flex-row mb-2">
+                    <!-- <div class="hallOfFame_tab flex flex-row mb-2">
                         <a href="" class="text-xl text-gray-900 mr-10">Program details</a>
                         <a href="" class="text-xl text-gray-900 mx-10 active_tab">Announcement <span class="pink">12</span></a>
                         <a href="" class="text-xl text-gray-900 mx-10">Hall of fame</a>
-                    </div>
+                    </div> -->
+                    <tab></tab>
                 </div>
 
                 <div class="p-4 rounded-lg border my-5">
@@ -65,12 +66,14 @@
 <script>
 import mainheader from "../header/header";
 import Hall from "@/components/hall/hall.vue";
+import tab from './tabcomponent';
 
 export default {
     name: 'discovery5',
     components: {
         mainheader,
-        Hall
+        Hall,
+        tab
     }
 }
 </script>
@@ -80,4 +83,11 @@ export default {
 .active_tab{
     border-bottom: 3px solid #df74fa;
 }
+
+@media only screen and (max-width: 44.69em) { /** 715px / 16 */
+    .hallOfFame_tab a {
+        font-size: 16px;
+    }
+}
+
 </style>

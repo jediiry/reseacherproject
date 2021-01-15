@@ -84,7 +84,8 @@
             </button>
         </div>
     </modal>
-    <div class="grid grid-cols-9 items-center">
+
+    <!-- <div class="grid grid-cols-9 items-center">
         <div class="col-span-6 p-2 nav_searchbox">
             <div class="menu-iconbox" @click="toggleMenu">
                 <div class="menu-icon">
@@ -98,6 +99,7 @@
                 <input type="text" placeholder="Search" class="headersearch">
             </div>
         </div>
+
         <div class="col-span-1 border-r-2 border-gray-300">
             <div class="grid grid-cols-3">
                 <div class="icon col-span-1 col-start-2">
@@ -110,6 +112,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-span-2 mx-4">
             <div class="grid grid-cols-6 items-center">
                 <div class="col-span-2 col-start-1 justify-self-end">
@@ -158,16 +161,6 @@
                                             <span class="flex" @click="$m.showmodal('availabilty')"> <img class="mx-2"
                                                     src="../../assets/icon/3.svg" alt="">
                                                 Availability</span>
-
-
-
-
-
-
-
-
-
-
                                         </a>
                                         <a href="#"
                                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
@@ -180,6 +173,129 @@
                                 </div>
                             </dropdown>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+    <div class="grid grid-cols-12 items-center">
+        <div class="col-span-7 p-2 nav_searchbox">
+            <div class="menu-iconbox" @click="toggleMenu">
+                <div class="menu-icon">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+            <div class="mainsearch">
+                <img src="../../assets//icon/searchicon.svg" alt="">
+                <input type="text" placeholder="Search" class="headersearch">
+            </div>
+        </div>
+        <div class="col-span-5 flex menuside_options">
+            <div class="flex items-center justify-evenly">
+                <div class="icon">
+                    <img class="message" src="../../assets/icon/Shape.svg" alt="">
+                    <img class="oval" src="../../assets/icon/Oval.svg" alt="">
+                </div>
+                <div class="icon">
+                    <img class="message" src="../../assets/icon/Message.svg" alt="">
+                    <img class="oval" src="../../assets/icon/Oval.svg" alt="">
+                </div>
+            </div>
+
+            <div class="flex justify-around">
+                <div class="flex items-center user_bio">
+                    <img class="avatar rounded-full"
+                        src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/attachment_68585523.jpg?auto=format&q=60&fit=max&w=930"
+                        alt="">
+                    <div class="col-span-3 ml-2">
+                        <span class="sm:text-sm xl:text-lg">John Lawal</span> <br>
+                        <span class="text-xs">User</span>
+                    </div>
+                </div>
+                
+                <div class="relative inline-block flex items-center mobile_bio">
+                    <div class="more flex items-center">
+                        <span class="font-bold"></span> 
+                        <a href="#" class="cursor-pointer inline trigger border rounded-md px-2 py-1 inline-block font-bold text-gray-500"
+                            aria-haspopup="true" @click="$m.showdropdown('bio')"
+                            aria-expanded="true">User</a> 
+
+                            <dropdown class="dropdown" id="bio" :class="['right-0', 'mt-8']">
+                                <div slot="content">
+                                    <div class="py-2 divide-y divide-gray-100" role="menu" aria-orientation="vertical"
+                                        aria-labelledby="options-menu">                                        
+                                        <div class="px-4 py-2" role="menuitem">
+                                            <div class="flex items-center">
+                                                <img class="avatar rounded-full"
+                                                    src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/attachment_68585523.jpg?auto=format&q=60&fit=max&w=930"
+                                                    alt="">
+                                                <div class="col-span-3 ml-2">
+                                                    <span class="sm:text-sm xl:text-lg">John Lawal</span> <br>
+                                                    <span class="text-xs">User</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dropdown>
+                    </div>
+                </div>
+
+                <div class="relative inline-block text-left flex items-center">
+                    <div class="more">
+                        <img class="h-8 cursor-pointer trigger" src="../../assets//icon/More.svg"
+                            @click="$m.showdropdown('notify')" id="options-menu" aria-haspopup="true"
+                            aria-expanded="true" alt="">
+
+
+                        <dropdown class="dropdown" id="notify" :class="['right-0', 'mt-8']">
+                            <div slot="content">
+                                <div class="py-2 divide-y divide-gray-100" role="menu" aria-orientation="vertical"
+                                    aria-labelledby="options-menu">
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                        role="menuitem">
+                                        <span class="flex"> <img class="mx-2" src="../../assets/icon/1.svg" alt="">
+                                            Profile</span></a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                        role="menuitem">
+                                        <span class="flex"> <img class="mx-2" src="../../assets/icon/2.svg" alt="">
+                                            Invite</span></a>
+                                    </a>
+                                    <a href="#" @click.prevent="route('Settings')"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                        role="menuitem">
+                                        <span class="flex"> <img class="mx-2" src="../../assets/icon/4.svg" alt="">
+                                            Account Settings</span>
+                                    </a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                        role="menuitem">
+                                        <span class="flex" @click="$m.showmodal('availabilty')"> <img class="mx-2"
+                                                src="../../assets/icon/3.svg" alt="">
+                                            Availability</span>
+                                    </a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                        role="menuitem">
+                                        <span class="flex"> <img class="mx-2" src="../../assets/icon/Group 2093.svg"
+                                                alt="">
+                                            Invite</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </dropdown>
                     </div>
                 </div>
             </div>
