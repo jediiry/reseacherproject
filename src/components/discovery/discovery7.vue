@@ -12,11 +12,13 @@
         <hall :submitButton="true" :imageButton="true"></hall>
 
         <div class="p-4">
-            <div class="hallOfFame_tab flex flex-row mb-10">
+            <!-- <div class="hallOfFame_tab flex flex-row mb-10">
                 <a href="" class="text-lg text-gray-400 mr-10 px-3">Program details</a>
                 <a href="" class="text-lg text-gray-400 mx-10 px-3 active_tab">Announcement <span class="pink"> 12</span></a>
                 <a href="" class="text-lg text-gray-400 mx-10 px-3">Hall of fame</a>
-            </div>
+            </div> -->
+            <tab></tab>
+            
 
             <div class="border rounded-md">
                 <h2 class="p-4 border-b text-lg">This program will pay out momentary rewards. Only points-based rewards will be given.</h2>
@@ -40,12 +42,15 @@
 <script>
 import Hall from "@/components/hall/hall.vue";
 import mainheader from "../header/header";
+import tab from './tabcomponent';
 
 export default {
     name: 'discovery6',
     components: {
         mainheader,
-        Hall
+        Hall,
+        tab
+
     },
 }
 </script>

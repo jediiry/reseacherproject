@@ -2,7 +2,7 @@
   <div class="grid grid-cols-7 mainfade">
     <sidebar></sidebar>
     <div class="col-start-2 col-span-11 main_content">
-      <discovery></discovery>
+      <!-- <discovery></discovery> -->
       <!-- <discovery></discovery> -->
       <!-- <discovery-two></discovery-two> -->
       <!-- <discovery-three></discovery-three> -->

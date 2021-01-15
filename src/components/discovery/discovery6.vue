@@ -12,11 +12,12 @@
         <hall :submitButton="true" :imageButton="true"></hall>
 
         <div class="p-4">
-            <div class="hallOfFame_tab flex flex-row mb-10">
-                <a href="" class="text-lg text-gray-400 mr-10 px-3">Program details</a>
-                <a href="" class="text-lg text-gray-400 mx-10 px-3">Announcement</a>
-                <a href="" class="text-lg text-gray-400 mx-10 px-3 active_tab">Hall of fame</a>
-            </div>
+            <!-- <div class="hallOfFame_tab flex flex-row mb-10">
+                <a href="" class="text-lg text-gray-400 mr-10 lg:ml-10">Program details</a>
+                <a href="" class="text-lg text-gray-400 mr-10">Announcement</a>
+                <a href="" class="text-lg text-gray-400 active_tab">Hall of fame</a>
+            </div> -->
+            <tab></tab>
 
             <div>
                 <h1 class="mb-2 text-2xl">Hall of Fame</h1>
@@ -113,12 +114,14 @@
 <script>
 import mainheader from "../header/header";
 import Hall from "@/components/hall/hall.vue";
+import tab from './tabcomponent';
 
 export default {
     name: 'discovery6',
     components: {
         mainheader,
-        Hall
+        Hall,
+        tab
     }
 }
 </script>
@@ -153,5 +156,11 @@ table.hallOfFame_table th {
 
 .active_tab{
     border-bottom: 3px solid #df74fa;
+}
+
+@media only screen and (max-width: 44.69em) { /** 715px / 16 */
+    .hallOfFame_tab a {
+        font-size: 14px;
+    }
 }
 </style>

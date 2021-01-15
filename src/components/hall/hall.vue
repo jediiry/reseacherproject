@@ -1,5 +1,5 @@
 <template>
-  <div class="hallOfFame flex border border-gray-300 border-solid ml-2 mr-16">
+  <div class="hallOfFame flex border border-gray-300 border-solid ml-2 sm:mr-10 lg:mr-16">
     <div
       class="hallOfFame_left flex flex-col border-r border-gray-300 border-solid"
     >
