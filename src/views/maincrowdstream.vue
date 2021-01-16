@@ -4,13 +4,11 @@
     <div class="col-start-2 col-span-11 main_content">
       <!-- <crowdstream></crowdstream> -->
       <crowdstream-two></crowdstream-two>
-
     </div>
   </div>
 </template>
 
 <script>
-
 // import crowdstream from "../components/crowdstream/crowdstream.vue";
 import crowdstreamTwo from "../components/crowdstream/crowdstream2.vue";
 
@@ -23,7 +21,6 @@ export default {
     sidebar,
     // crowdstream,
     crowdstreamTwo,
-
   },
 };
 </script>
