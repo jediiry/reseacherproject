@@ -121,7 +121,7 @@ export default {
   /** 1200px / 16 */
 
   #header {
-    margin-left: 15px;
+    margin-left: 13px;
   }
 }
 </style>
