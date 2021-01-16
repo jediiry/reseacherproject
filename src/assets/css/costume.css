@@ -41,7 +41,7 @@
 }
 @font-face {
   font-family: 'roboto';
-  src: url('../font/Rubik-Light.ttf');
+  src: url('../font/Rubik-Regular.ttf');
 }
 body {
   font-family: 'roboto' !important;
@@ -132,7 +132,7 @@ body {
 .icon .oval {
   position: absolute;
   top: 2px;
-  right: 40%;
+  right: 0%;
   height: 0.8rem;
 }
 .avatar {
@@ -258,4 +258,13 @@ input:checked ~ .toggle__dot {
 }
 input:checked ~ .toggle__line {
   background: #DA04F2;
+}
+@media only screen and (max-width: 75em) {
+  /** 1200px / 16 */
+  .main_content {
+    grid-column-start: 1;
+  }
+  .mobile_sidemenu {
+    display: block !important;
+  }
 }

@@ -196,8 +196,8 @@
                 </div>
             </div>
             <div class="mainsearch">
-                <img src="../../assets//icon/searchicon.svg" alt="">
-                <input type="text" placeholder="Search" class="headersearch">
+                <!-- <img src="../../assets//icon/searchicon.svg" alt="">
+                <input type="text" placeholder="Search" class="headersearch"> -->
             </div>
         </div>
         <div class="col-span-5 flex menuside_options">
@@ -222,32 +222,32 @@
                         <span class="text-xs">User</span>
                     </div>
                 </div>
-                
+
                 <div class="relative inline-block flex items-center mobile_bio">
                     <div class="more flex items-center">
-                        <span class="font-bold"></span> 
-                        <a href="#" class="cursor-pointer inline trigger border rounded-md px-2 py-1 inline-block font-bold text-gray-500"
-                            aria-haspopup="true" @click="$m.showdropdown('bio')"
-                            aria-expanded="true">User</a> 
+                        <span class="font-bold"></span>
+                        <a href="#"
+                            class="cursor-pointer inline trigger border rounded-md px-2 py-1 inline-block font-bold text-gray-500"
+                            aria-haspopup="true" @click="$m.showdropdown('bio')" aria-expanded="true">User</a>
 
-                            <dropdown class="dropdown" id="bio" :class="['right-0', 'mt-8']">
-                                <div slot="content">
-                                    <div class="py-2 divide-y divide-gray-100" role="menu" aria-orientation="vertical"
-                                        aria-labelledby="options-menu">                                        
-                                        <div class="px-4 py-2" role="menuitem">
-                                            <div class="flex items-center">
-                                                <img class="avatar rounded-full"
-                                                    src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/attachment_68585523.jpg?auto=format&q=60&fit=max&w=930"
-                                                    alt="">
-                                                <div class="col-span-3 ml-2">
-                                                    <span class="sm:text-sm xl:text-lg">John Lawal</span> <br>
-                                                    <span class="text-xs">User</span>
-                                                </div>
+                        <dropdown class="dropdown" id="bio" :class="['right-0', 'mt-8']">
+                            <div slot="content">
+                                <div class="py-2 divide-y divide-gray-100" role="menu" aria-orientation="vertical"
+                                    aria-labelledby="options-menu">
+                                    <div class="px-4 py-2" role="menuitem">
+                                        <div class="flex items-center">
+                                            <img class="avatar rounded-full"
+                                                src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/attachment_68585523.jpg?auto=format&q=60&fit=max&w=930"
+                                                alt="">
+                                            <div class="col-span-3 ml-2">
+                                                <span class="sm:text-sm xl:text-lg">John Lawal</span> <br>
+                                                <span class="text-xs">User</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </dropdown>
+                            </div>
+                        </dropdown>
                     </div>
                 </div>
 
@@ -267,12 +267,7 @@
                                         role="menuitem">
                                         <span class="flex"> <img class="mx-2" src="../../assets/icon/1.svg" alt="">
                                             Profile</span></a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                                        role="menuitem">
-                                        <span class="flex"> <img class="mx-2" src="../../assets/icon/2.svg" alt="">
-                                            Invite</span></a>
-                                    </a>
+
                                     <a href="#" @click.prevent="route('Settings')"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                                         role="menuitem">

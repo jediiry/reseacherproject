@@ -22,7 +22,8 @@ export default {
 </script>
 
 <style>
-@media only screen and (max-width: 75em) { /** 1200px / 16 */
+@media only screen and (max-width: 75em) {
+  /** 1200px / 16 */
   .main_content {
     grid-column-start: 1;
   }
