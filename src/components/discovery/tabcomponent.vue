@@ -1,14 +1,15 @@
 <template>
     <div class="hallOfFame_tab flex flex-row mb-10">
-        <a href="" class="text-lg text-gray-400 mr-10 lg:ml-10">Program details</a>
-        <a href="" class="text-lg text-gray-400 mr-10">Announcement</a>
-        <a href="" class="text-lg text-gray-400 active_tab">Hall of fame</a>
+        <a href="" class="text-lg text-gray-400 mr-10 lg:ml-10">{{item1 || 'Program details' }}</a>
+        <a href="" class="text-lg text-gray-400 mr-10">{{item2 || 'Announcement' }}</a>
+        <a href="" class="text-lg text-gray-400 active_tab">{{item3 || 'Hall of fame' }}</a>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'tabcomponent'
+    name: 'tabcomponent',
+    props: ['item1', 'item2', 'item3']
 }
 </script>
 

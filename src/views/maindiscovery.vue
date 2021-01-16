@@ -4,7 +4,7 @@
     <div class="col-start-2 col-span-11 main_content">
       <discovery></discovery>
       <!-- <discovery></discovery> -->
-      <!-- <discovery-two></discovery-two> -->
+      <discovery-two></discovery-two>
       <!-- <discovery-three></discovery-three> -->
       <!-- <discovery-four></discovery-four> -->
       <!-- <discovery-five></discovery-five> -->
@@ -15,8 +15,13 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import discovery from "../components/discovery/discovery.vue";
 // import DiscoveryTwo from "../components/discovery/discovery2.vue";
+=======
+// import discovery from "../components/discovery/discovery.vue";
+import DiscoveryTwo from "../components/discovery/discovery2.vue";
+>>>>>>> e8e001beb39026a23474b75b73b76e472bdec246
 // import DiscoveryThree from "../components/discovery/discovery3.vue";
 // import DiscoveryFour from "../components/discovery/discovery4.vue";
 // import DiscoveryFive from "../components/discovery/discovery5.vue";
@@ -30,8 +35,13 @@ export default {
   name: "maindiscovery",
   components: {
     sidebar,
+<<<<<<< HEAD
     discovery,
     // DiscoveryTwo,
+=======
+    // discovery,
+    DiscoveryTwo,
+>>>>>>> e8e001beb39026a23474b75b73b76e472bdec246
     // DiscoveryThree,
     // DiscoveryFour,
     // DiscoveryFive,
