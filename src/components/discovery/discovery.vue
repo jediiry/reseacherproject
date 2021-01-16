@@ -35,7 +35,7 @@
           class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
         >
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG2.png" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Kenna Security</b></h4>
@@ -59,7 +59,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG3.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Upwork</b></h4>
@@ -93,7 +93,7 @@
           class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
         >
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG.png" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Bigbank</b></h4>
@@ -115,7 +115,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG2.png" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Kenna Security</b></h4>
@@ -139,7 +139,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG3.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Upwork</b></h4>
@@ -163,7 +163,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG4.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Cloudinary</b></h4>
@@ -186,7 +186,7 @@
             </div>
           </div>
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG5.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Okta</b></h4>
@@ -209,7 +209,7 @@
             </div>
           </div>
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG6.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Canva</b></h4>
@@ -246,7 +246,7 @@
           class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
         >
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG.png" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Bigbank</b></h4>
@@ -268,7 +268,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG2.png" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Kenna Security</b></h4>
@@ -292,7 +292,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG3.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Upwork</b></h4>
@@ -316,7 +316,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG4.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Cloudinary</b></h4>
@@ -339,7 +339,7 @@
             </div>
           </div>
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG5.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Okta</b></h4>
@@ -362,7 +362,7 @@
             </div>
           </div>
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG6.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Canva</b></h4>
@@ -396,7 +396,7 @@
           class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
         >
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG.png" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Bigbank</b></h4>
@@ -418,7 +418,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG2.png" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Kenna Security</b></h4>
@@ -442,7 +442,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG3.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Upwork</b></h4>
@@ -466,7 +466,7 @@
           </div>
 
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG4.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Cloudinary</b></h4>
@@ -489,7 +489,7 @@
             </div>
           </div>
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG5.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Okta</b></h4>
@@ -512,7 +512,7 @@
             </div>
           </div>
           <div class="col-span-1 flex flex-col">
-            <div class="custom_card h-full relative">
+            <div class="custom_card h-full relative" @click.prevent="details">
               <img src="../../assets/BG6.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="font-title mb-2"><b>Canva</b></h4>
@@ -575,6 +575,11 @@ export default {
   components: {
     mainheader,
   },
+  methods: {
+    details() {
+      this.$router.push("program/details");
+    },
+  },
 };
 </script>
 
@@ -593,5 +598,6 @@ export default {
 
 .custom_card img {
   border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 5px -2px rgb(241, 241, 241);
 }
 </style>

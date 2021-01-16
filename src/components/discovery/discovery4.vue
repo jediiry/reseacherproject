@@ -19,20 +19,20 @@
       <div
         class="submitProgram-box1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1"
       >
-        <h2 class="text-base mb-2">Summary title</h2>
+        <h2 class="font-two mb-2">Summary title</h2>
         <p class="text-xs text-gray-600 mb-8">
           Help us get an idea of what this vulnerability is about.
         </p>
 
-        <h2 class="text-base mb-2">Target</h2>
-        <p class="text-base mb-2 text-xs text-gray-600">
+        <h2 class="font-two mb-2">Target</h2>
+        <p class="font-two mb-2 text-xs text-gray-600">
           Select the vulnerability target
         </p>
         <p class="text-xs text-gray-500 mb-8">
           Help us get an idea of what this vulnerability is about.
         </p>
 
-        <h2 class="text-base mb-2">Technical severity</h2>
+        <h2 class="font-two mb-2">Technical severity</h2>
         <p class="text-xs text-gray-600 mb-8">
           The
           <span class="text-blue-500"> Vulnerability Rating Taxonomy </span> is
@@ -43,7 +43,7 @@
           severity rating applied for your submission.
         </p>
 
-        <h2 class="text-base mb-2">Vulnerability details</h2>
+        <h2 class="font-two mb-2">Vulnerability details</h2>
       </div>
 
       <div
@@ -139,7 +139,7 @@
         class="submitProgram-box3 sm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-1"
       >
         <div class="p-4 mb-4 border rounded">
-          <h2 class="text-lg font-bold">Program Rules</h2>
+          <h2 class="font-title font-bold">Program Rules</h2>
           <span class="text-xs"
             >Please familiarize yourself with Bugcrowd's
             <span class="text-blue-500"> standard disclosure terms.</span>
@@ -147,7 +147,7 @@
         </div>
 
         <div class="border rounded px-9 py-5">
-          <h2 class="text-lg font-bold">Some tips</h2>
+          <h2 class="font-title font-bold">Some tips</h2>
           <ul class="text-xs list-disc">
             <li class="mb-3">
               Issues with a submission? Please reach out to
@@ -172,13 +172,13 @@
       class="grid md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-7 px-10 mb-10"
     >
       <div class="submitProgram-box1 md:col-span-2 lg:col-span-1 xl:col-span-1">
-        <h2 class="text-base mb-2 inline">Attachments</h2>
+        <h2 class="font-two mb-2 inline">Attachments</h2>
         <span class="text-xs text-gray-500">(optional)</span>
         <p class="text-xs text-gray-500 mb-20">
           Attach proof-of-cencept scripts. screenshots, screen recordings, etc.
         </p>
 
-        <h2 class="text-base mb-2">Confirmation</h2>
+        <h2 class="font-two mb-2">Confirmation</h2>
         <p class="text-xs text-gray-500 mb-4">
           Confirm your submission adheres to:
         </p>

@@ -1,4 +1,4 @@
-<div>
+<div class="h-screen fade">
     <mainheader></mainheader>
     <div class="px-10">
         <div>
@@ -9,24 +9,156 @@
                 <span class="item cursor-pointer" :class="{'active': tab == 'pending'}" @click="setTab('pending')">
                     Pending
                 </span>
-                <span class="item">
+                <span class="item cursor-pointer" :class="{'active': tab == 'accepted'}" @click="setTab('accepted')">
                     Accepted
                 </span>
-                <span class="item">
+                <span class="item cursor-pointer" :class="{'active': tab == 'rejected'}" @click="setTab('rejected')">
                     Rejected
                 </span>
-                <span class="item">
+                <span class="item cursor-pointer" :class="{'active': tab == 'duplicate'}" @click="setTab('duplicate')">
                     Duplicate
                 </span>
-                <span class="item">
+                <span class="item cursor-pointer" :class="{'active': tab == 'Collaboration'}"
+                    @click="setTab('Collaboration')">
                     Collaboration
                 </span>
-                <span class="item">
+                <span class="item cursor-pointer" :class="{'active': tab == 'invitation'}"
+                    @click="setTab('invitation')">
                     Invitation
                 </span>
             </div>
         </div>
         <div class="fade" v-if="tab == 'all'">
+
+            <div class="grid grid-cols-7 my-8 border-2 border-gray-100 p-8 rounded-md">
+                <div>
+                    <img src="../../assets/icon/pininterest.svg" class="h-32 " alt="" />
+                </div>
+                <div class="col-span-6">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="w-100">
+                            <p class="font-title mb-3">
+                                Disclosed report: [ExpressVPN Router] Integer Buffer
+                                Overflow: Server Info Disclosure When Router's Nginx
+                                Server used as Reverse Proxy Server
+                            </p>
+                            <p class="font-three text-gray-500">
+                                By jaisharmaProgram
+                                <span class="pink">ExpressVPN</span> Priority P3
+                            </p>
+                        </div>
+                        <div class="w-full mt-10">
+                            <div>
+                                <span class="font-title">Disclosed on 24 Nov 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-7 my-8 border-2 border-gray-100 p-8 rounded-md">
+                <div>
+                    <img src="../../assets/icon/pininterest.svg" class="h-32 " alt="" />
+                </div>
+                <div class="col-span-6">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="w-100">
+                            <p class="font-title mb-3">
+                                Disclosed report: [ExpressVPN Router] Integer Buffer
+                                Overflow: Server Info Disclosure When Router's Nginx
+                                Server used as Reverse Proxy Server
+                            </p>
+                            <p class="font-three text-gray-500">
+                                By jaisharmaProgram
+                                <span class="pink">ExpressVPN</span> Priority P3
+                            </p>
+                        </div>
+                        <div class="w-full mt-10">
+                            <div>
+                                <span class="font-title">Disclosed on 24 Nov 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-7 my-8 border-2 border-gray-100 p-8 rounded-md">
+                <div>
+                    <img src="../../assets/icon/pininterest.svg" class="h-32 " alt="" />
+                </div>
+                <div class="col-span-6">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="w-100">
+                            <p class="font-title mb-3">
+                                Disclosed report: [ExpressVPN Router] Integer Buffer
+                                Overflow: Server Info Disclosure When Router's Nginx
+                                Server used as Reverse Proxy Server
+                            </p>
+                            <p class="font-three text-gray-500">
+                                By jaisharmaProgram
+                                <span class="pink">ExpressVPN</span> Priority P3
+                            </p>
+                        </div>
+                        <div class="w-full mt-10">
+                            <div>
+                                <span class="font-title">Disclosed on 24 Nov 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-7 my-8 border-2 border-gray-100 p-8 rounded-md">
+                <div>
+                    <img src="../../assets/icon/pininterest.svg" class="h-32 " alt="" />
+                </div>
+                <div class="col-span-6">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="w-100">
+                            <p class="font-title mb-3">
+                                Disclosed report: [ExpressVPN Router] Integer Buffer
+                                Overflow: Server Info Disclosure When Router's Nginx
+                                Server used as Reverse Proxy Server
+                            </p>
+                            <p class="font-three text-gray-500">
+                                By jaisharmaProgram
+                                <span class="pink">ExpressVPN</span> Priority P3
+                            </p>
+                        </div>
+                        <div class="w-full mt-10">
+                            <div>
+                                <span class="font-title">Disclosed on 24 Nov 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-7 my-8 border-2 border-gray-100 p-8 rounded-md">
+                <div>
+                    <img src="../../assets/icon/pininterest.svg" class="h-32 " alt="" />
+                </div>
+                <div class="col-span-6">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="w-100">
+                            <p class="font-title mb-3">
+                                Disclosed report: [ExpressVPN Router] Integer Buffer
+                                Overflow: Server Info Disclosure When Router's Nginx
+                                Server used as Reverse Proxy Server
+                            </p>
+                            <p class="font-three text-gray-500">
+                                By jaisharmaProgram
+                                <span class="pink">ExpressVPN</span> Priority P3
+                            </p>
+                        </div>
+                        <div class="w-full mt-10">
+                            <div>
+                                <span class="font-title">Disclosed on 24 Nov 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="my-10 fade" v-if="tab == 'pending'">
             <div>
                 <noitem
                     message="Your vulnerability reports will appear here Every accepted submission enhances your accuracy rating, which will help you gain access to additional private programs.">
@@ -39,118 +171,69 @@
                 </a>
             </div>
         </div>
-        <div class="my-10 fade" v-if="tab == 'pending'">
-            <div class="grid grid-cols-7 my-1 border-2 border-gray-200 p-10 rounded-md">
-                <div>
-                    <img src="../../assets/icon/pininterest.svg" class="h-32 " alt="">
-                </div>
-                <div class="col-span-6">
-                    <div class="flex flex-wrap justify-between">
-                        <div class="w-100">
-                            <p class="text-xl">Disclosed report: [ExpressVPN Router] Integer Buffer Overflow: Server
-                                Info
-                                Disclosure When
-                                Router's Nginx Server used as Reverse Proxy Server</p>
-                            <p>By jaisharmaProgram ExpressVPN Priority P3</p>
-
-                        </div>
-                        <div class="w-full mt-10">
-                            <div class="flex justify-between">
-                                <div class="">
-                                    <span class="text-lg">Disclosed on 24 Nov 2020</span>
-                                </div>
-                                <div class="">
-                                    <span class="text-lg text-red-300"> Pending</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+        <div class="my-10 fade" v-if="tab == 'accepted'">
+            <div>
+                <noitem
+                    message="Your vulnerability reports will appear here Every accepted submission enhances your accuracy rating, which will help you gain access to additional private programs.">
+                </noitem>
             </div>
-            <div class="grid grid-cols-7 my-1 border-2 border-gray-200 p-10 rounded-md">
-                <div>
-                    <img src="../../assets/icon/telsa.svg" class="h-32 " alt="">
-                </div>
-                <div class="col-span-6">
-                    <div class="flex flex-wrap justify-between">
-                        <div class="w-100">
-                            <p class="text-xl">Disclosed report: [ExpressVPN Router] Integer Buffer Overflow: Server
-                                Info
-                                Disclosure When
-                                Router's Nginx Server used as Reverse Proxy Server</p>
-                            <p>By jaisharmaProgram ExpressVPN Priority P3</p>
-
-                        </div>
-                        <div class="w-full mt-10">
-                            <div class="flex justify-between">
-                                <div class="">
-                                    <span class="text-lg">Disclosed on 24 Nov 2020</span>
-                                </div>
-                                <div class="">
-                                    <span class="text-lg text-purple-300"> Accepted</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="flex justify-center">
+                <a href=""
+                    class="bg-gray-500 rounded-lg font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
+                    Click here
+                </a>
             </div>
-            <div class="grid grid-cols-7 my-1 border-2 border-gray-200 p-10 rounded-md">
-                <div>
-                    <img src="../../assets/icon/3logo.svg" class="h-32 " alt="">
-                </div>
-                <div class="col-span-6">
-                    <div class="flex flex-wrap justify-between">
-                        <div class="w-100">
-                            <p class="text-xl">Disclosed report: [ExpressVPN Router] Integer Buffer Overflow: Server
-                                Info
-                                Disclosure When
-                                Router's Nginx Server used as Reverse Proxy Server</p>
-                            <p>By jaisharmaProgram ExpressVPN Priority P3</p>
-
-                        </div>
-                        <div class="w-full mt-10">
-                            <div class="flex justify-between">
-                                <div class="">
-                                    <span class="text-lg">Disclosed on 24 Nov 2020</span>
-                                </div>
-                                <div class="">
-                                    <span class="text-lg text-red-300"> Pending</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+        </div>
+        <div class="my-10 fade" v-if="tab == 'rejected'">
+            <div>
+                <noitem
+                    message="Your vulnerability reports will appear here Every accepted submission enhances your accuracy rating, which will help you gain access to additional private programs.">
+                </noitem>
             </div>
-            <div class="grid grid-cols-7 my-1 border-2 border-gray-200 p-10 rounded-md">
-                <div>
-                    <img src="../../assets/icon/lastlogo.svg" class="h-32 " alt="">
-                </div>
-                <div class="col-span-6">
-                    <div class="flex flex-wrap justify-between">
-                        <div class="w-100">
-                            <p class="text-xl">Disclosed report: [ExpressVPN Router] Integer Buffer Overflow: Server
-                                Info
-                                Disclosure When
-                                Router's Nginx Server used as Reverse Proxy Server</p>
-                            <p>By jaisharmaProgram ExpressVPN Priority P3</p>
-
-                        </div>
-                        <div class="w-full mt-10">
-                            <div class="flex justify-between">
-                                <div class="">
-                                    <span class="text-lg">Disclosed on 24 Nov 2020</span>
-                                </div>
-                                <div class="">
-                                    <span class="text-lg text-red-300"> Pending</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="flex justify-center">
+                <a href=""
+                    class="bg-gray-500 rounded-lg font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
+                    Click here
+                </a>
+            </div>
+        </div>
+        <div class="my-10 fade" v-if="tab == 'duplicate'">
+            <div>
+                <noitem
+                    message="Your vulnerability reports will appear here Every accepted submission enhances your accuracy rating, which will help you gain access to additional private programs.">
+                </noitem>
+            </div>
+            <div class="flex justify-center">
+                <a href=""
+                    class="bg-gray-500 rounded-lg font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
+                    Click here
+                </a>
+            </div>
+        </div>
+        <div class="my-10 fade" v-if="tab == 'Collaboration'">
+            <div>
+                <noitem
+                    message="Your vulnerability reports will appear here Every accepted submission enhances your accuracy rating, which will help you gain access to additional private programs.">
+                </noitem>
+            </div>
+            <div class="flex justify-center">
+                <a href=""
+                    class="bg-gray-500 rounded-lg font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
+                    Click here
+                </a>
+            </div>
+        </div>
+        <div class="my-10 fade" v-if="tab == 'invitation'">
+            <div>
+                <noitem
+                    message="Your vulnerability reports will appear here Every accepted submission enhances your accuracy rating, which will help you gain access to additional private programs.">
+                </noitem>
+            </div>
+            <div class="flex justify-center">
+                <a href=""
+                    class="bg-gray-500 rounded-lg font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
+                    Click here
+                </a>
             </div>
         </div>
     </div>

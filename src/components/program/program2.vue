@@ -15,21 +15,21 @@
       <div class="hallOfFame_tab flex flex-row mb-10">
         <a
           href=""
-          class="text-lg font-bold mr-10 px-3"
+          class="font-title font-bold mr-10 px-3"
           @click.prevent="tab = 'details'"
           :class="{ active_tab: tab == 'details' }"
           >Program details</a
         >
         <a
           href=""
-          class="text-lg font-bold mx-10 px-3"
+          class="font-title font-bold mx-10 px-3"
           @click.prevent="tab = 'hanger'"
           :class="{ active_tab: tab == 'hanger' }"
           >Hangar</a
         >
         <a
           href=""
-          class="text-lg font-bold mx-10 px-3"
+          class="font-title font-bold mx-10 px-3"
           @click.prevent="tab = 'fame'"
           :class="{ active_tab: tab == 'fame' }"
           >Hall of fame</a
@@ -42,9 +42,11 @@
       </div>
 
       <div v-if="tab == 'details'">
-        <div class="grid auto-rows-auto sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 px-2 lg:px-5">
+        <div
+          class="grid auto-rows-auto sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 px-2 lg:px-5"
+        >
           <div class="col-span-2 mt-2 pr-6">
-            <p class="text-base">
+            <p class="font-two">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a
               tempora porro vero, ut praesentium tempore minima debitis, unde
               suscipit consectetur animi temporibus ex eos, quo optio quod nulla
@@ -56,8 +58,8 @@
               debitis, unde suscipit consectetur animi temporibus ex eos, quo
               optio quod nulla itaque!.
             </p>
-            <h3 class="text-lg font-bold my-7">Eligibility</h3>
-            <p class="text-base  my-7">
+            <h3 class="font-title font-bold my-7">Eligibility</h3>
+            <p class="font-two  my-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a
               tempora porro vero, ut praesentium tempore minima debitis, unde
               suscipit consectetur animi temporibus ex eos, quo optio quod nulla
@@ -69,8 +71,8 @@
               debitis, unde suscipit consectetur animi temporibus ex eos, quo
               optio quod nulla itaque!.
             </p>
-            <h3 class="text-lg font-bold my-7">Eligibility</h3>
-            <p class="text-base  my-7">
+            <h3 class="font-title font-bold my-7">Eligibility</h3>
+            <p class="font-two  my-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               <span class="text-purple-500">Vulnerability Rating Taxonomy</span>
               porro vero, ut praesentium tempore minima debitis, unde suscipit
@@ -78,10 +80,10 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a
               tempora porro vero, ut praesentium tempore minima debitis, unde.
             </p>
-            <h3 class="text-lg font-bold my-7">
+            <h3 class="font-title font-bold my-7">
               Discovering Security Vulnerabilities
             </h3>
-            <p class="text-base  my-7">
+            <p class="font-two  my-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
               porro vero, ut praesentium tempore minima debitis, unde suscipit
               consectetur animi temporibus ex eos, quo optio quod nulla itaque!.
@@ -89,7 +91,7 @@
               tempora porro vero, ut praesentium tempore minima debitis, unde.
             </p>
 
-            <ul class="list-disc mb-8 p-4 text-base  p-3">
+            <ul class="list-disc mb-8 p-4 font-two  p-3">
               <li class="pb-1">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Dolorum iste eius eos vitae consectetur.
@@ -206,7 +208,7 @@
               </tbody>
             </table>
 
-            <p class="text-base my-20 text-gray-700">
+            <p class="font-two my-20 text-gray-700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
               ratione dolore provident deserunt iure repellendus beatae alias
               debitis ut neque voluptate quam error, qui mollitia fugiat
@@ -217,7 +219,7 @@
             </p>
 
             <h3 class="text-xl mt-7 mb-3">Target Information</h3>
-            <p class="text-base text-sm text-gray-700">
+            <p class="font-two text-sm text-gray-700">
               The target for this engagement is the management portal of the
               LogicBuisiness web application.
             </p>
@@ -225,12 +227,12 @@
             <h3 class="text-xl mt-10 mb-4">API Documentation</h3>
             <a
               href=""
-              class="text-base border-b border-indigo-500 text-indigo-500"
+              class="font-two border-b border-indigo-500 text-indigo-500"
               >https://manage.logicboxes.com/kb/node/744</a
             >
 
             <h3 class="text-xl mt-7 mb-3">Credentials</h3>
-            <p class="text-base mb-10 text-sm text-gray-700">
+            <p class="font-two mb-10 text-sm text-gray-700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
               ratione dolore provident deserunt iure repellendus beatae alias
               debitis ut neque voluptate quam error, qui mollitia fugiat
@@ -238,12 +240,12 @@
             </p>
 
             <h3 class="text-xl mt-10 mb-3">Credentials</h3>
-            <p class="text-base mb-5 text-sm text-gray-700">
+            <p class="font-two mb-5 text-sm text-gray-700">
               The following is a partial list of issues that we ask for you not
               to report, unless you believe there is an actual vulnerability:
             </p>
 
-            <ul class="text-base mb-5 text-sm text-gray-700">
+            <ul class="font-two mb-5 text-sm text-gray-700">
               <li class="text-gray-700 mb-1">
                 - CSRF on forms that are available to anonymous users
               </li>
@@ -263,12 +265,12 @@
 
             <h3 class="text-xl mt-10 mb-6">Safe Harbor:</h3>
 
-            <h2 class="mb-6 italic text-lg">
+            <h2 class="mb-6 italic font-title">
               When conducting vulnerability reseacrh according to this policy,
               we comsider this research to be:
             </h2>
 
-            <ul class="text-base mb-5 text-sm text-gray-700">
+            <ul class="font-two mb-5 text-sm text-gray-700">
               <li class="text-gray-700 mb-1">
                 - CSRF on forms that are available to anonymous users,on forms
                 that are available to anonymous users
@@ -292,7 +294,7 @@
             </ul>
 
             <p
-              class="text-base italic mb-10 text-sm text-gray-700 leading-relaxed"
+              class="font-two italic mb-10 text-sm text-gray-700 leading-relaxed"
             >
               If at any time you have concerns or are uncertain whether your
               security research is consistent with this policy, please inquire
@@ -336,7 +338,7 @@
           <div class="col-span-1">
             <h3 class="text-xl mb-4">Vulnerability Rewarded</h3>
             <div class="border border-gray-300 border-solid rounded-lg mb-8">
-              <h1 class="p-6 text-lg">0</h1>
+              <h1 class="p-6 font-title">0</h1>
             </div>
 
             <h3 class="text-xl mb-4">Known issues</h3>
@@ -436,7 +438,6 @@
         </div>
       </div>
 
-
       <div v-if="tab == 'hanger'">
         <div class="bg-white rounded-md">
           <div class="grid grid-cols-12 bg-gray-100 justify-center mb-8">
@@ -483,7 +484,9 @@
                       </div>
                       <div class="w-full mt-10">
                         <div>
-                          <span class="text-lg">Disclosed on 24 Nov 2020</span>
+                          <span class="font-title"
+                            >Disclosed on 24 Nov 2020</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -515,7 +518,9 @@
                       </div>
                       <div class="w-full mt-10">
                         <div>
-                          <span class="text-lg">Disclosed on 24 Nov 2020</span>
+                          <span class="font-title"
+                            >Disclosed on 24 Nov 2020</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -547,7 +552,9 @@
                       </div>
                       <div class="w-full mt-10">
                         <div>
-                          <span class="text-lg">Disclosed on 24 Nov 2020</span>
+                          <span class="font-title"
+                            >Disclosed on 24 Nov 2020</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -579,7 +586,9 @@
                       </div>
                       <div class="w-full mt-10">
                         <div>
-                          <span class="text-lg">Disclosed on 24 Nov 2020</span>
+                          <span class="font-title"
+                            >Disclosed on 24 Nov 2020</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -611,7 +620,9 @@
                       </div>
                       <div class="w-full mt-10">
                         <div>
-                          <span class="text-lg">Disclosed on 24 Nov 2020</span>
+                          <span class="font-title"
+                            >Disclosed on 24 Nov 2020</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -647,7 +658,7 @@
                     </div>
                     <div class="w-full mt-10">
                       <div>
-                        <span class="text-lg">Disclosed on 24 Nov 2020</span>
+                        <span class="font-title">Disclosed on 24 Nov 2020</span>
                       </div>
                     </div>
                   </div>

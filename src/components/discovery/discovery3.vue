@@ -15,7 +15,7 @@
       <!-- <div class="customBox flex border border-gray-300 border-solid ml-2 rounded">
                 <div class="customBox_left flex flex-col border-r border-gray-300 border-solid">
                     <div class="p-5 pb-20">
-                        <h1 class="text-lg mb-2">Bigbank</h1>
+                        <h1 class="font-title mb-2">Bigbank</h1>
                         <span class="text-xs text-gray-400 block">Help Secure Bigbank!</span>
                         <div class="mt-7 mb-3">
                             <img  class="inline mr-2" src="../../assets/icon/shop.svg" alt=""> 
@@ -73,7 +73,7 @@
             consectetur animi temporibus ex eos.
           </p>
 
-          <h3 class="text-lg my-6">Research Policy</h3>
+          <h3 class="font-title my-6">Research Policy</h3>
           <p class="text-sm text-gray-400 mb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem porro
             vero, ut praesentium tempore minima debitis, unde suscipit
@@ -84,9 +84,9 @@
             We right decide that some finding is accepted risk and not fix it.
           </p>
 
-          <h3 class="text-lg my-6">Rewards</h3>
+          <h3 class="font-title my-6">Rewards</h3>
 
-          <ul class="list-disc mb-8 p-4 text-base text-gray-400 p-3">
+          <ul class="list-disc mb-8 p-4 font-two text-gray-400 p-3">
             <li class="pb-1">
               This program does notpay out monetary rewards. Only points-based
               rewards will be given.
@@ -245,7 +245,7 @@
             >2 known issues on unspecified targets.</span
           >
 
-          <p class="text-base my-20 text-gray-700">
+          <p class="font-two my-20 text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione
             dolore provident deserunt iure repellendus beatae alias debitis ut
             neque voluptate quam error, qui mollitia fugiat sapiente eligendi
@@ -256,18 +256,18 @@
           </p>
 
           <h3 class="text-xl mt-7 mb-3">Target Information</h3>
-          <p class="text-base text-sm text-gray-700">
+          <p class="font-two text-sm text-gray-700">
             The target for this engagement is the management portal of the
             LogicBuisiness web application.
           </p>
 
           <h3 class="text-xl mt-7 mb-3">Credentials</h3>
-          <p class="text-base mb-5 text-sm text-gray-700">
+          <p class="font-two mb-5 text-sm text-gray-700">
             The following is a partial list of issues that we ask for you not to
             report, unless you believe there is an actual vulnerability:
           </p>
 
-          <ul class="text-base mb-5 text-xs text-gray-700">
+          <ul class="font-two mb-5 text-xs text-gray-700">
             <li class="text-gray-700 mb-1">
               - CSRF on forms that are available to anonymous users
             </li>
@@ -287,12 +287,12 @@
 
           <h3 class="text-xl mt-10 mb-6">Safe Harbor:</h3>
 
-          <h2 class="mb-6 italic text-lg">
+          <h2 class="mb-6 italic font-title">
             When conducting vulnerability reseacrh according to this policy, we
             comsider this research to be:
           </h2>
 
-          <ul class="text-base mb-5 text-sm text-gray-700">
+          <ul class="font-two mb-5 text-sm text-gray-700">
             <li class="text-gray-700 mb-1">
               - CSRF on forms that are available to anonymous users,on forms
               that are available to anonymous users
@@ -316,7 +316,7 @@
           </ul>
 
           <p
-            class="text-base italic mb-10 text-sm text-gray-700 leading-relaxed"
+            class="font-two italic mb-10 text-sm text-gray-700 leading-relaxed"
           >
             If at any time you have concerns or are uncertain whether your
             security research is consistent with this policy, please inquire via
@@ -361,7 +361,7 @@
           <h3 class="text-xl mb-4">Vulnerability Rewarded</h3>
 
           <div class="border border-gray-300 border-solid rounded-lg mb-8">
-            <h1 class="p-6 text-lg">0</h1>
+            <h1 class="p-6 font-title">0</h1>
           </div>
 
           <h3 class="text-xl mb-4">Known issues</h3>

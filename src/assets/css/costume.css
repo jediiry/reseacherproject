@@ -242,6 +242,7 @@ body {
   padding: 0.8rem 1.7rem;
   background-color: #f3f4f641;
   border-radius: 10px;
+  font-weight: 900;
 }
 .submission .active {
   background-color: white;
