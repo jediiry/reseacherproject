@@ -7,7 +7,7 @@
           <h1 class="font-title mb-6">Upcoming payment</h1>
 
           <div
-            class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
+            class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5"
           >
             <div class="col-span-1 flex flex-col">
               <div class="custom_card h-full relative" @click.prevent="details">
@@ -155,7 +155,7 @@
           <h1 class="font-title mb-6">Remitted payment</h1>
 
           <div
-            class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
+            class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5"
           >
             <div class="col-span-1 flex flex-col">
               <div class="custom_card h-full relative" @click.prevent="details">

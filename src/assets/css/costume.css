@@ -258,6 +258,8 @@ body {
 }
 .settingtab .active {
   border-bottom: 3px solid #DA04F2;
+  color: black;
+  background-color: white;
 }
 .bg-pink {
   background: #DA04F2;

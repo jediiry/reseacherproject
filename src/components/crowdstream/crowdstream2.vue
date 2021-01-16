@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-screen fade">
     <mainheader></mainheader>
     <div class="p-10">
       <h1 class="font-one mb-2">CrowdStream</h1>
