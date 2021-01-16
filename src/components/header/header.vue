@@ -102,7 +102,6 @@ export default {
     display: flex;
     align-items: center;
   }
-
   .menu-iconbox {
     display: block;
   }
@@ -116,6 +115,13 @@ export default {
 
   .mobile_bio {
     display: block;
+  }
+}
+@media only screen and (min-width: 75em) {
+  /** 1200px / 16 */
+
+  #header {
+    margin-left: 15px;
   }
 }
 </style>
