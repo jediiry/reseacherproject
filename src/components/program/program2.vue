@@ -38,12 +38,11 @@
 
       <div v-if="tab == 'fame'" class="fade">
         <h1 class="mb-8 text-2xl">Hall of Fame</h1>
-
         <tableone />
       </div>
 
       <div v-if="tab == 'details'">
-        <div class="grid grid-cols-3 px-5">
+        <div class="grid auto-rows-auto sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 px-2 lg:px-5">
           <div class="col-span-2 mt-2 pr-6">
             <p class="text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a
@@ -436,6 +435,8 @@
           </div>
         </div>
       </div>
+
+
       <div v-if="tab == 'hanger'">
         <div class="bg-white rounded-md">
           <div class="grid grid-cols-12 bg-gray-100 justify-center mb-8">
