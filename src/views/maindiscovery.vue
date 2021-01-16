@@ -15,8 +15,13 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import discovery from "../components/discovery/discovery.vue";
 // import DiscoveryTwo from "../components/discovery/discovery2.vue";
+=======
+// import discovery from "../components/discovery/discovery.vue";
+import DiscoveryTwo from "../components/discovery/discovery2.vue";
+>>>>>>> d839d95df90d265404796baf946c8b31cca267a6
 // import DiscoveryThree from "../components/discovery/discovery3.vue";
 // import DiscoveryFour from "../components/discovery/discovery4.vue";
 // import DiscoveryFive from "../components/discovery/discovery5.vue";
@@ -30,8 +35,13 @@ export default {
   name: "maindiscovery",
   components: {
     sidebar,
+<<<<<<< HEAD
     discovery,
     // DiscoveryTwo,
+=======
+    // discovery,
+    DiscoveryTwo,
+>>>>>>> d839d95df90d265404796baf946c8b31cca267a6
     // DiscoveryThree,
     // DiscoveryFour,
     // DiscoveryFive,

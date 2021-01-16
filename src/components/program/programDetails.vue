@@ -12,7 +12,7 @@
     <div class="pl-2 pr-5 lg:pr-16">
       <hall :submitButton="true" :imageButton="true"></hall>
 
-      <div class="pl-5 pt-5 mt-10">
+      <div class="pl-5 lg:pl-10 pt-5 mt-10">
         <div class="hallOfFame_tab flex flex-row mb-2">
           <a href="" class="text-xl text-gray-900 md:mr-10 font-bold px-2 active_tab">
             Program details</a>
@@ -22,7 +22,7 @@
 
 
         <div class="grid auto-rows-auto sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4">
-          <div class="col-span-2 mt-3 pr-6">
+          <div class="col-span-3 mt-3 pr-6">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a
               tempora porro vero, ut praesentium tempore minima debitis, unde
