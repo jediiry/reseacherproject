@@ -59,6 +59,20 @@ body {
   border-radius: 10px;
   margin-right: 10px;
 }
+.font-one {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.font-two {
+  font-size: 1rem;
+}
+.font-three {
+  font-size: 0.8rem;
+}
+.font-title {
+  font-weight: 900;
+  font-size: 1rem;
+}
 .modal {
   display: none;
   animation: bounce-in 0.5s;
@@ -82,7 +96,7 @@ body {
   align-items: center;
   padding: 1.2rem 2rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 900;
   cursor: pointer;
 }
 .menu .menu-item img {
@@ -179,12 +193,13 @@ body {
   display: flex;
 }
 .chatmenu .chatmenu-item {
-  margin: 0 2rem;
+  margin: 0px 16px;
   cursor: pointer;
   padding-bottom: 0.7rem;
 }
 .chatmenu .active {
   color: black;
+  background-color: white;
   font-weight: 600;
   border-bottom: 3px solid black;
 }

@@ -24,6 +24,20 @@
 	margin-right : 10px;
 }
 
+.font-one{
+    font-size: @font-one;
+    font-weight: @font-title;
+}
+.font-two{
+    font-size: @font-two;
+}
+.font-three{
+    font-size: @font-three;
+}
+.font-title{
+    font-weight: @font-title;
+    font-size: @font-two;
+}
 .modal{
     display: none;
     animation: bounce-in .5s;
@@ -47,8 +61,8 @@
         justify-self: start;
         align-items: center;
         padding: 1.2rem 2rem;
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: @font-two;
+        font-weight: @font-title;
      cursor: pointer;
      img{
          margin-right: 1rem;
@@ -161,12 +175,13 @@
 .chatmenu{
     display: flex;
     .chatmenu-item{
-        margin-right: 16px;
+        margin: 0px 16px;
         cursor: pointer;
         padding-bottom: .7rem;
     }
     .active{
 color: black;
+background-color: white;
 font-weight: 600;
         border-bottom: 3px solid black;
     }

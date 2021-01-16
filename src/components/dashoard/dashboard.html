@@ -3,7 +3,7 @@
     <div class="bg-light-gray pb-10">
         <div class="grid grid-cols-1 p-10">
             <div>
-                <p class="greeting-title">Good Afternoon Lawal!</p>
+                <p class="font-one">Good Afternoon Lawal!</p>
             </div>
         </div>
 
@@ -12,11 +12,11 @@
         <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-5 px-10">
             <div class="bg-white shadow-md rounded-md">
                 <div class="grid grid-cols-5 bg-gray-100 justify-center">
-                    <div class="text-center cursor-pointer p-5 font-bold col-span-2" :class="{'bg-white': reward, 'pink' : reward}"
-                        @click="reward = true">
+                    <div class="text-center cursor-pointer p-5 font-title col-span-2"
+                        :class="{'bg-white': reward, 'pink' : reward}" @click="reward = true">
                         Reward
                     </div>
-                    <div class="text-center cursor-pointer p-5 font-bold col-span-2"
+                    <div class="text-center cursor-pointer p-5 font-title col-span-2"
                         :class="{'bg-white': !reward, 'pink' : !reward}" @click="reward = false">
                         Just For You
                     </div>
@@ -27,11 +27,11 @@
                             <div class="grid grid-cols-1 px-12 py-5 justify-center">
                                 <div class="grid grid-cols-2 gap-3">
                                     <div class="col-span-1">
-                                        <p>Last 30 days</p>
+                                        <p class="font-two">Last 30 days</p>
                                         <input type="text" class="form-control" placeholder="$0.00">
                                     </div>
                                     <div class="col-span-1">
-                                        <p>Upcoming Payments</p>
+                                        <p class="font-two">Upcoming Payments</p>
                                         <input type="text" class="form-control" placeholder="$0.00">
                                     </div>
                                 </div>
@@ -40,7 +40,7 @@
                         </div>
                     </transition>
                 </div>
-                <div class="px-10 fade" v-else>
+                <div class="px-10 pb-10 fade" v-else>
                     <div class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
                         <div class="grid grid-cols-12 mb-3">
                             <div>
@@ -49,8 +49,8 @@
                                 </div>
                             </div>
                             <div class="col-span-10">
-                                <p class="font-bold text-lg">Submission of Zenith Bank Report</p>
-                                <p class="text-xs">2020-12-24</p>
+                                <p class="font-title text-lg">Submission of Zenith Bank Report</p>
+                                <p class="font-three">2020-12-24</p>
                             </div>
                             <div class="flex justify-end">
                                 <img src="../../assets/icon/Vector.svg" alt="">
@@ -59,7 +59,7 @@
                         </div>
 
                         <div>
-                            <p class="text-sm mt-3">
+                            <p class="font-two text-sm mt-3">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
                                 illo.
                                 Amet
@@ -81,8 +81,8 @@
                                 </div>
                             </div>
                             <div class="col-span-10">
-                                <p class="font-bold text-lg">No hardware, no problem! Route your ...</p>
-                                <p class="text-sm">Help secure a router's operating system.</p>
+                                <p class="font-title text-lg">No hardware, no problem! Route your ...</p>
+                                <p class="font-three">Help secure a router's operating system.</p>
                             </div>
                             <div class="flex justify-end">
                                 $150-$250
@@ -92,7 +92,7 @@
 
                         <div class="flex items-center">
                             <div class="">
-                                <p class="text-sm mt-3">
+                                <p class="font-two text-sm mt-3">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
                                     illo.
                                     Amet
@@ -121,8 +121,8 @@
                                 </div>
                             </div>
                             <div class="col-span-10">
-                                <p class="font-bold text-lg">No hardware, no problem! Route your ...</p>
-                                <p class="text-sm">Help secure a router's operating system.</p>
+                                <p class="font-title text-lg">No hardware, no problem! Route your ...</p>
+                                <p class="font-three">Help secure a router's operating system.</p>
                             </div>
                             <div class="flex justify-end">
                                 $150-$250
@@ -132,7 +132,7 @@
 
                         <div class="flex items-center">
                             <div class="">
-                                <p class="text-sm mt-3">
+                                <p class="font-two text-sm mt-3">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
                                     illo.
                                     Amet
@@ -156,13 +156,13 @@
 
                 </div>
             </div>
-            <div class="bg-white shadow-md rounded-md p-10">
+            <div class="bg-white shadow-md rounded-md px-10 py-5">
                 <div class="grid grid-cols-8">
                     <div @click="currentsession = true">
-                        <span class="font-bold cursor-pointer" :class="{'pink': currentsession}">Task</span>
+                        <span class="font-title cursor-pointer" :class="{'pink': currentsession}">Task</span>
                     </div>
                     <div @click="currentsession = false">
-                        <span class=" font-bold cursor-pointer" :class="{'pink': !currentsession}">Activity</span>
+                        <span class=" font-title cursor-pointer" :class="{'pink': !currentsession}">Activity</span>
                     </div>
                 </div>
                 <div v-if="currentsession">
@@ -180,7 +180,8 @@
                             <div v-if="currentTask == 'all'">
                                 <transition name="fade">
                                     <div>
-                                        <div class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
+                                        <div
+                                            class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
                                             <div class="flex mb-3 taskitem">
                                                 <div class="">
                                                     <div
@@ -189,9 +190,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="">
-                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission
+                                                    <p class="font-title sm:text-sm md:text-base lg:text-lg">Submission
                                                         of Zenith Bank Report</p>
-                                                    <p class="text-xs">2020-12-24</p>
+                                                    <p class="font-three">2020-12-24</p>
                                                 </div>
                                                 <div class="flex justify-end ">
                                                     <img src="../../assets/icon/Vector.svg" alt="">
@@ -200,7 +201,7 @@
                                             </div>
 
                                             <div>
-                                                <p class="xs:text-sm md:text-xs lg:text-sm mt-3">
+                                                <p class="font-two xs:text-sm md:text-xs lg:text-sm mt-3">
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
                                                     illo.
                                                     Amet
@@ -214,7 +215,8 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
+                                        <div
+                                            class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
                                             <div class="flex mb-3 taskitem">
                                                 <div class="">
                                                     <div
@@ -223,9 +225,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="">
-                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission
+                                                    <p class="font-title sm:text-sm md:text-base lg:text-lg">Submission
                                                         of Zenith Bank Report</p>
-                                                    <p class="text-xs">2020-12-24</p>
+                                                    <p class="font-three">2020-12-24</p>
                                                 </div>
                                                 <div class="flex justify-end ">
                                                     <img src="../../assets/icon/Vector.svg" alt="">
@@ -233,65 +235,52 @@
 
                                             </div>
 
-                                            
+
                                         </div>
-                                        <!-- <div class="mt-2  rounded-md p-5 divide-y divide-solid divide-gray-200">
-                                            <div class="grid grid-cols-12 mb-3">
-                                                <div class="sm:col-span-1 md:col-span-1 lg:col-span-2">
+                                        <div
+                                            class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
+                                            <div class="flex mb-3 taskitem">
+                                                <div class="">
                                                     <div
                                                         class="flex justify-center items-center h-8 w-8 rounded-full bg-pink-200">
                                                         <img src="../../assets/icon/arrow-down-right.svg" alt="">
                                                     </div>
                                                 </div>
-                                                <div class="sm:col-span-10 md:col-span-10 lg:col-span-8">
-                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission
+                                                <div class="">
+                                                    <p class="font-title sm:text-sm md:text-base lg:text-lg">Submission
                                                         of Zenith Bank Report</p>
-                                                    <p class="text-xs">2020-12-24</p>
+                                                    <p class="font-three">2020-12-24</p>
                                                 </div>
-                                                <div class="flex justify-end sm:col-span-1 md:col-span-1 lg:col-span-2">
-                                                    <img src="../../assets/icon/Vectorarrowfront.svg" alt="">
+                                                <div class="flex justify-end ">
+                                                    <img src="../../assets/icon/Vector.svg" alt="">
                                                 </div>
 
                                             </div>
+
+
                                         </div>
-                                        <div class="mt-2  rounded-md p-5 divide-y divide-solid divide-gray-200">
-                                            <div class="grid grid-cols-12 mb-3">
-                                                <div class="sm:col-span-1 md:col-span-1 lg:col-span-2">
+                                        <div
+                                            class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
+                                            <div class="flex mb-3 taskitem">
+                                                <div class="">
                                                     <div
                                                         class="flex justify-center items-center h-8 w-8 rounded-full bg-pink-200">
                                                         <img src="../../assets/icon/arrow-down-right.svg" alt="">
                                                     </div>
                                                 </div>
-                                                <div class="sm:col-span-10 md:col-span-10 lg:col-span-8">
-                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission
+                                                <div class="">
+                                                    <p class="font-title sm:text-sm md:text-base lg:text-lg">Submission
                                                         of Zenith Bank Report</p>
-                                                    <p class="text-xs">2020-12-24</p>
+                                                    <p class="font-three">2020-12-24</p>
                                                 </div>
-                                                <div class="flex justify-end sm:col-span-1 md:col-span-1 lg:col-span-2">
-                                                    <img src="../../assets/icon/Vectorarrowfront.svg" alt="">
+                                                <div class="flex justify-end ">
+                                                    <img src="../../assets/icon/Vector.svg" alt="">
                                                 </div>
 
                                             </div>
+
+
                                         </div>
-                                        <div class="mt-2  rounded-md p-5 divide-y divide-solid divide-gray-200">
-                                            <div class="grid grid-cols-12 mb-3">
-                                                <div class="sm:col-span-1 md:col-span-1 lg:col-span-2">
-                                                    <div
-                                                        class="flex justify-center items-center h-8 w-8 rounded-full bg-pink-200">
-                                                        <img src="../../assets/icon/arrow-down-right.svg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="sm:col-span-10 md:col-span-10 lg:col-span-8">
-                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission
-                                                        of Zenith Bank Report</p>
-                                                    <p class="text-xs">2020-12-24</p>
-                                                </div>
-                                                <div class="flex justify-end sm:col-span-1 md:col-span-1 lg:col-span-2">
-                                                    <img src="../../assets/icon/Vectorarrowfront.svg" alt="">
-                                                </div>
-
-                                            </div>
-                                        </div> -->
 
                                     </div>
                                 </transition>
@@ -389,8 +378,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-span-10">
-                                                    <p class="font-bold text-lg">Submission of Zenith Bank Report</p>
-                                                    <p class="text-xs">2020-12-24</p>
+                                                    <p class="font-title text-lg">Submission of Zenith Bank Report</p>
+                                                    <p class="font-three">2020-12-24</p>
                                                 </div>
                                                 <div class="flex justify-end">
                                                     <img src="../../assets/icon/Vector.svg" alt="">
@@ -399,7 +388,7 @@
                                             </div>
 
                                             <div>
-                                                <p class="text-sm mt-3">
+                                                <p class="font-two text-sm mt-3">
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
                                                     illo.
                                                     Amet
@@ -422,8 +411,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-span-10">
-                                                    <p class="font-bold text-lg">Submission of Zenith Bank Report</p>
-                                                    <p class="text-xs">2020-12-24</p>
+                                                    <p class="font-title text-lg">Submission of Zenith Bank Report</p>
+                                                    <p class="font-three">2020-12-24</p>
                                                 </div>
                                                 <div class="flex justify-end">
                                                     <img src="../../assets/icon/Vectorarrowfront.svg" alt="">
@@ -442,8 +431,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-span-10">
-                                                    <p class="font-bold text-lg">Submission of Zenith Bank Report</p>
-                                                    <p class="text-xs">2020-12-24</p>
+                                                    <p class="font-title text-lg">Submission of Zenith Bank Report</p>
+                                                    <p class="font-three">2020-12-24</p>
                                                 </div>
                                                 <div class="flex justify-end">
                                                     <img src="../../assets/icon/Vectorarrowfront.svg" alt="">
@@ -462,8 +451,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-span-10">
-                                                    <p class="font-bold text-lg">Submission of Zenith Bank Report</p>
-                                                    <p class="text-xs">2020-12-24</p>
+                                                    <p class="font-title text-lg">Submission of Zenith Bank Report</p>
+                                                    <p class="font-three">2020-12-24</p>
                                                 </div>
                                                 <div class="flex justify-end">
                                                     <img src="../../assets/icon/Vectorarrowfront.svg" alt="">
