@@ -1,5 +1,5 @@
 <template>
-  <div class="fade bg-light-gray">
+  <div class="min-h-screen fade bg-light-gray">
     <mainheader></mainheader>
     <div class=" pb-5">
       <div class="grid grid-cols-1 p-10">
@@ -14,12 +14,14 @@
         class="text-2xl mr-6 cursor-pointer"
         :class="{ pink: showtab == 'features' }"
         @click.prevent="showtab = 'features'"
-        >Features</span>
+        >Features</span
+      >
       <span
         class="text-2xl cursor-pointer"
         :class="{ pink: showtab != 'features' }"
         @click.prevent="showtab = 'featuress'"
-        >Just for you</span>
+        >Just for you</span
+      >
     </div>
 
     <div class="px-10 mb-9">
@@ -28,18 +30,25 @@
         <p class="pink">See More</p>
       </div>
 
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
+      <div
+        class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
+      >
         <div class="col-span-1 flex flex-col">
           <div class="custom_card h-full relative">
             <img src="../../assets/odin.jpg" alt="Avatar" />
             <div class="px-3 pt-4 pb-2">
               <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
               <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-              <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+              <div
+                class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+              >
                 <p class="text-xs"><span class="pink"></span></p>
                 <div>
-                  <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />
-                  
+                  <img
+                    class="inline"
+                    src="../../assets/icon/discovery_icon2.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -52,11 +61,16 @@
             <div class="px-3 pt-4 pb-2">
               <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
               <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-              <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+              <div
+                class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+              >
                 <p class="text-xs"><span class="pink"></span></p>
                 <div>
-                  <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />
-                  
+                  <img
+                    class="inline"
+                    src="../../assets/icon/discovery_icon2.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -65,9 +79,6 @@
       </div>
     </div>
 
-
-
-
     <div class="fade" v-if="showtab == 'features'">
       <div class="px-10 mb-9">
         <div class="flex justify-between mb-6">
@@ -75,18 +86,25 @@
           <p class="pink">See More</p>
         </div>
 
-        <div class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
+        <div
+          class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
+        >
           <div class="col-span-1 flex flex-col">
             <div class="custom_card h-full relative">
               <img src="../../assets/odin.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
                 <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-                <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                <div
+                  class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+                >
                   <p class="text-xs"><span class="pink"></span></p>
                   <div>
-                    <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />
-                    
+                    <img
+                      class="inline"
+                      src="../../assets/icon/discovery_icon2.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -99,11 +117,16 @@
               <div class="px-3 pt-4 pb-2">
                 <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
                 <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-                <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                <div
+                  class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+                >
                   <p class="text-xs"><span class="pink"></span></p>
                   <div>
-                    <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />
-                    
+                    <img
+                      class="inline"
+                      src="../../assets/icon/discovery_icon2.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -120,17 +143,25 @@
           <p class="pink">See More</p>
         </div>
 
-        <div class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
+        <div
+          class="grid auto-rows-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
+        >
           <div class="col-span-1 flex flex-col">
             <div class="custom_card h-full relative">
               <img src="../../assets/odin.jpg" alt="Avatar" />
               <div class="px-3 pt-4 pb-2">
                 <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
                 <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-                <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                <div
+                  class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+                >
                   <p class="text-xs">$100<span class="pink">$4,500</span></p>
                   <div>
-                    <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />                    
+                    <img
+                      class="inline"
+                      src="../../assets/icon/discovery_icon2.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -143,11 +174,16 @@
               <div class="px-3 pt-4 pb-2">
                 <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
                 <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-                <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                <div
+                  class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+                >
                   <p class="text-xs"><span class="pink"></span></p>
                   <div>
-                    <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />
-                    
+                    <img
+                      class="inline"
+                      src="../../assets/icon/discovery_icon2.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -160,11 +196,16 @@
               <div class="px-3 pt-4 pb-2">
                 <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
                 <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-                <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                <div
+                  class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+                >
                   <p class="text-xs"><span class="pink"></span></p>
                   <div>
-                    <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />
-                    
+                    <img
+                      class="inline"
+                      src="../../assets/icon/discovery_icon2.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -177,11 +218,16 @@
               <div class="px-3 pt-4 pb-2">
                 <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
                 <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-                <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                <div
+                  class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+                >
                   <p class="text-xs"><span class="pink"></span></p>
                   <div>
-                    <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />
-                    
+                    <img
+                      class="inline"
+                      src="../../assets/icon/discovery_icon2.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -194,11 +240,16 @@
               <div class="px-3 pt-4 pb-2">
                 <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
                 <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-                <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                <div
+                  class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+                >
                   <p class="text-xs"><span class="pink"></span></p>
                   <div>
-                    <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />
-                    
+                    <img
+                      class="inline"
+                      src="../../assets/icon/discovery_icon2.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -211,17 +262,21 @@
               <div class="px-3 pt-4 pb-2">
                 <h4 class="text-sm mb-2"><b>Bigbank</b></h4>
                 <p class="text-xs text-gray-500 mb-10">Help Secure Bigbank!</p>
-                <div class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3">
+                <div
+                  class="flex justify-between items-center absolute bottom-0 right-0 w-full py-2 px-3"
+                >
                   <p class="text-xs"><span class="pink"></span></p>
                   <div>
-                    <img class="inline" src="../../assets/icon/discovery_icon2.svg" alt="" />
-                    
+                    <img
+                      class="inline"
+                      src="../../assets/icon/discovery_icon2.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -238,19 +293,15 @@
                 Connect to your profileto recieve program recommendations based
                 on your skills.
               </span>
-              
+
               <div>
                 <p class="text-sm pink">Go to portfolio account</p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-
-
   </div>
 </template>
 

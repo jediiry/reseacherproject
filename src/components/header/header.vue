@@ -14,9 +14,9 @@ export default {
       this.$store.state.active = param;
       this.$router.push(`/${param}`);
     },
-    toggleMenu(){
-      document.querySelector('.menu-background').classList.toggle('hidemenu');
-    }
+    toggleMenu() {
+      document.querySelector(".menu-background").classList.toggle("hidemenu");
+    },
   },
 };
 </script>
@@ -26,22 +26,23 @@ export default {
   display: flex;
 }
 
-.menu-iconbox{
+.menu-iconbox {
   display: none;
   margin-left: 10px;
   flex: 1;
 }
 
-.mainsearch{
+.mainsearch {
   flex: 11;
 }
 
 .menu-icon {
   display: grid;
   place-items: center;
-  height: 50px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .menu-icon > span {
@@ -53,7 +54,7 @@ export default {
 }
 
 .line-1 {
-  width: 42px;
+  width: 30px;
   justify-self: end;
 }
 
@@ -63,13 +64,12 @@ export default {
 }
 
 .menu-icon:hover span:nth-child(1) {
-  width: 35px;
+  width: 30px;
 }
 
-.menu-icon:hover span:nth-child(2) {    
-  width: 35px;
+.menu-icon:hover span:nth-child(2) {
+  width: 30px;
 }
-
 
 .menu-icon.active span:nth-child(1) {
   transform-origin: center center;
@@ -88,7 +88,7 @@ export default {
   width: 55px;
 }
 
-.mobile_bio{
+.mobile_bio {
   display: none;
 }
 
@@ -96,26 +96,26 @@ export default {
   flex: 1;
 }
 
-@media only screen and (max-width: 75em) { /** 1200px / 16 */
+@media only screen and (max-width: 75em) {
+  /** 1200px / 16 */
   .nav_searchbox {
     display: flex;
     align-items: center;
   }
 
-  .menu-iconbox{
+  .menu-iconbox {
     display: block;
   }
 }
 
-@media only screen and (max-width: 55.375em) { /** 886px / 16 */
-  .user_bio{
+@media only screen and (max-width: 55.375em) {
+  /** 886px / 16 */
+  .user_bio {
     display: none;
   }
 
-  .mobile_bio{
+  .mobile_bio {
     display: block;
   }
 }
-
-
 </style>

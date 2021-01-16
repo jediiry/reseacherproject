@@ -15,21 +15,21 @@
       <div class="hallOfFame_tab flex flex-row mb-10">
         <a
           href=""
-          class="text-lg text-gray-400 mr-10 px-3"
+          class="text-lg font-bold mr-10 px-3"
           @click.prevent="tab = 'details'"
           :class="{ active_tab: tab == 'details' }"
           >Program details</a
         >
         <a
           href=""
-          class="text-lg text-gray-400 mx-10 px-3"
+          class="text-lg font-bold mx-10 px-3"
           @click.prevent="tab = 'hanger'"
           :class="{ active_tab: tab == 'hanger' }"
           >Hangar</a
         >
         <a
           href=""
-          class="text-lg text-gray-400 mx-10 px-3"
+          class="text-lg font-bold mx-10 px-3"
           @click.prevent="tab = 'fame'"
           :class="{ active_tab: tab == 'fame' }"
           >Hall of fame</a
@@ -43,9 +43,9 @@
       </div>
 
       <div v-if="tab == 'details'">
-        <div class="grid grid-cols-3 p-5">
-          <div class="col-span-2 mt-8 pr-6">
-            <p class="text-base text-gray-400">
+        <div class="grid grid-cols-3 px-5">
+          <div class="col-span-2 mt-2 pr-6">
+            <p class="text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a
               tempora porro vero, ut praesentium tempore minima debitis, unde
               suscipit consectetur animi temporibus ex eos, quo optio quod nulla
@@ -57,8 +57,8 @@
               debitis, unde suscipit consectetur animi temporibus ex eos, quo
               optio quod nulla itaque!.
             </p>
-            <h3 class="text-lg my-7">Eligibility</h3>
-            <p class="text-base text-gray-400 my-7">
+            <h3 class="text-lg font-bold my-7">Eligibility</h3>
+            <p class="text-base  my-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a
               tempora porro vero, ut praesentium tempore minima debitis, unde
               suscipit consectetur animi temporibus ex eos, quo optio quod nulla
@@ -70,8 +70,8 @@
               debitis, unde suscipit consectetur animi temporibus ex eos, quo
               optio quod nulla itaque!.
             </p>
-            <h3 class="text-lg my-7">Eligibility</h3>
-            <p class="text-base text-gray-400 my-7">
+            <h3 class="text-lg font-bold my-7">Eligibility</h3>
+            <p class="text-base  my-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               <span class="text-purple-500">Vulnerability Rating Taxonomy</span>
               porro vero, ut praesentium tempore minima debitis, unde suscipit
@@ -79,8 +79,10 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a
               tempora porro vero, ut praesentium tempore minima debitis, unde.
             </p>
-            <h3 class="text-lg my-7">Discovering Security Vulnerabilities</h3>
-            <p class="text-base text-gray-400 my-7">
+            <h3 class="text-lg font-bold my-7">
+              Discovering Security Vulnerabilities
+            </h3>
+            <p class="text-base  my-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
               porro vero, ut praesentium tempore minima debitis, unde suscipit
               consectetur animi temporibus ex eos, quo optio quod nulla itaque!.
@@ -88,7 +90,7 @@
               tempora porro vero, ut praesentium tempore minima debitis, unde.
             </p>
 
-            <ul class="list-disc mb-8 p-4 text-base text-gray-400 p-3">
+            <ul class="list-disc mb-8 p-4 text-base  p-3">
               <li class="pb-1">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Dolorum iste eius eos vitae consectetur.

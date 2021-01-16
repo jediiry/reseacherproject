@@ -33,7 +33,7 @@ export default {
     // discovery,
     // DiscoveryTwo,
     // DiscoveryThree,
-    DiscoveryFour
+    DiscoveryFour,
     // DiscoveryFive,
     // DiscoverySix,
     // DiscoverySeven
