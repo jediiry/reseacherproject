@@ -45,4 +45,15 @@ export default {
     flex: 11;
   }
 }
+
+@media only screen and (max-width: 41.25em) { /** 660px / 16 */
+  .chat-title{
+    font-size: 12px;
+  }
+
+  .chatmenu-item {
+    font-size: 11px;
+    margin: 0 3px;
+  }
+}
 </style>

@@ -12,11 +12,11 @@
         <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-5 px-10">
             <div class="bg-white shadow-md rounded-md">
                 <div class="grid grid-cols-5 bg-gray-100 justify-center">
-                    <div class="text-center cursor-pointer p-5 font-bold" :class="{'bg-white': reward, 'pink' : reward}"
+                    <div class="text-center cursor-pointer p-5 font-bold col-span-2" :class="{'bg-white': reward, 'pink' : reward}"
                         @click="reward = true">
                         Reward
                     </div>
-                    <div class="text-center cursor-pointer p-5 font-bold"
+                    <div class="text-center cursor-pointer p-5 font-bold col-span-2"
                         :class="{'bg-white': !reward, 'pink' : !reward}" @click="reward = false">
                         Just For You
                     </div>
@@ -180,8 +180,7 @@
                             <div v-if="currentTask == 'all'">
                                 <transition name="fade">
                                     <div>
-                                        <div
-                                            class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
+                                        <div class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
                                             <div class="flex mb-3 taskitem">
                                                 <div class="">
                                                     <div
@@ -215,7 +214,28 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="mt-2  rounded-md p-5 divide-y divide-solid divide-gray-200">
+                                        <div class="mt-7 bg-light-gray rounded-md p-5 divide-y divide-solid divide-gray-200">
+                                            <div class="flex mb-3 taskitem">
+                                                <div class="">
+                                                    <div
+                                                        class="flex justify-center items-center h-8 w-8 rounded-full bg-pink-200">
+                                                        <img src="../../assets/icon/arrow-down-right.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <p class="font-bold sm:text-sm md:text-base lg:text-lg">Submission
+                                                        of Zenith Bank Report</p>
+                                                    <p class="text-xs">2020-12-24</p>
+                                                </div>
+                                                <div class="flex justify-end ">
+                                                    <img src="../../assets/icon/Vector.svg" alt="">
+                                                </div>
+
+                                            </div>
+
+                                            
+                                        </div>
+                                        <!-- <div class="mt-2  rounded-md p-5 divide-y divide-solid divide-gray-200">
                                             <div class="grid grid-cols-12 mb-3">
                                                 <div class="sm:col-span-1 md:col-span-1 lg:col-span-2">
                                                     <div
@@ -271,7 +291,7 @@
                                                 </div>
 
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                     </div>
                                 </transition>
@@ -473,9 +493,9 @@
         <div class="grid grid-cols-1 gap-5 px-10 mt-7 ">
 
             <div class="bg-white shadow-md rounded-md p-10 divide-y divide-solid divide-gray-200">
-                <div class="grid grid-cols-8 ">
-                    <div class="col-span-4">
-                        <span class="font-bold">Activity Summary</span>
+                <div class="flex justify-between">
+                    <div>
+                        <span class="font-bold chat-title">Activity Summary</span>
                     </div>
                     <div>
                         <div class="chatmenu">
