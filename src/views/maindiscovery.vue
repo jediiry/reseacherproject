@@ -4,7 +4,7 @@
     <div class="col-start-2 col-span-11 main_content">
       <discovery></discovery>
       <!-- <discovery></discovery> -->
-      <discovery-two></discovery-two>
+      <!-- <discovery-two></discovery-two> -->
       <!-- <discovery-three></discovery-three> -->
       <!-- <discovery-four></discovery-four> -->
       <!-- <discovery-five></discovery-five> -->
