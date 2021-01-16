@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen fade bg-light-gray">
+  <div class="h-screen fade bg-light-gray">
     <mainheader></mainheader>
     <div class=" pb-5">
       <div class="grid grid-cols-1 p-10">

@@ -271,4 +271,5 @@ input:checked ~ .toggle__line {
 #header {
   position: sticky;
   top: 0px;
+  background-color: white;
 }
