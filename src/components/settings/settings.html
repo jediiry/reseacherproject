@@ -1,15 +1,15 @@
 <div class="min-h-screen bg-light-gray">
     <mainheader></mainheader>
-    <div class="px-10">
+    <div class="px-4 lg:px-10 xl:px-10">
         <div class="grid grid-cols-1 py-10">
             <div>
                 <p class="greeting-title">Hi Lawal!</p>
             </div>
         </div>
-        <div class="bg-white p-10 shadow-md divide-gray-100 divide-y">
+        <div class="bg-white p-0 lg:p-10 xl:p-10 shadow-md divide-gray-100 divide-y">
             <div>
-                <div class="grid grid-cols-2">
-                    <div>
+                <div class="settings_tab flex">
+                    <div class="settings_tab_left overflow-x-auto">
                         <div class="settingtab">
                             <div class="item" :class="{'active': data == 'security'}"
                                 @click.prevent="settab('security')">
@@ -23,33 +23,33 @@
                                 Payment
                             </div>
                             <div class="item" :class="{'active': data == 'profile'}" @click.prevent="settab('profile')">
-                                profile
+                                Profile
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="flex justify-end">
+                    <div class="settings_tab_right flex items-center">
+                        <!-- <div class="flex justify-end"> -->
                             <button type="button" @click="$m.hidemodal('hours')"
-                                class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white font-two font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                                class="w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white font-two font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-xs text-sm xs:text-xs">
                                 Close
                             </button>
                             <button type="button"
-                                class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-pink font-two font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                                class="mx-3 w-full mr-4 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-pink font-two font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-xs text-sm xs:text-xs">
                                 Update Setting
                             </button>
 
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
-            <div class="p-10">
+            <div class="p-6 lg:p-10 xl:p-10">
                 <div v-if="data == 'profile'">
                     <div>
                         <p>General Information</p>
                     </div>
                     <div class="border border-1 border-gray-200 mt-6 p-10 ">
-                        <div class="grid grid-cols-6">
-                            <div class="span-col-1">
+                        <div class="genral_info_box flex items-center">
+                            <div class="sm:mr-4 md:mr-6 lg:mr-10 xl:mr-10">
                                 <div class="relative">
                                     <img class="h-32 rounded-full"
                                         src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/artistic-album-cover-design-template-d12ef0296af80b58363dc0deef077ecc_screen.jpg?ts=1561488440"
@@ -66,26 +66,52 @@
 
                     <div class="mt-10">
                         <div class="grid grid-cols-2 gap-5">
-                            <div>
-                                <label for="firstname"> Firstname</label>
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="firstname"> Firstname</label>
                                 <input type="text" class="form-control" placeholder="John">
                             </div>
-                            <div>
-                                <label for="firstname"> Lastname</label>
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="lastname"> Lastname</label>
                                 <input type="text" class="form-control" placeholder="Lawal">
                             </div>
-                            <div>
-                                <label for="firstname"> Lastname</label>
-                                <input type="text" class="form-control" placeholder="Lawal">
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="email"> Email</label>
+                                <input type="email" class="form-control" placeholder="Enter your Email">
                             </div>
-                            <div>
-                                <label for="firstname"> Email</label>
-                                <input type="text" class="form-control" placeholder="Enter your Email">
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="phone"> Phone</label>
+                                <input type="text" class="form-control" placeholder="Enter phone number">
                             </div>
-                            <div>
-                                <label for="firstname"> Language</label>
-                                <input type="text" class="form-control" placeholder="English">
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="language"> Language</label>
+                                <select name="language" class="form-control">
+                                    <option value="english">English</option>
+                                    <option value="english">Spanish</option>
+                                    <option value="english">French</option>
+                                </select>
                             </div>
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="Twitter handle">Twitter handle</label>
+                                <span class="block text-xs">Add your Twitter username, e.g. SwiftOnSecurity</span>
+                                <input type="text" value="@twitterHandle" class="form-control">
+                            </div>
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="linkedin">LinkedIn</label>
+                                <span class="block text-xs">Add your LinkedIn profile URL, e.g. https://linkedin.com/company/teklabspace</span>
+                                <input type="text" value="https://linkedin.com/company/teklabspace" class="form-control">
+                            </div>
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="Website">Website</label>
+                                <span class="block text-xs">Add your personal blog or profile website</span>
+                                <input type="text" value="https://example.com" class="form-control">
+                            </div>
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="biography">Biography</label>
+                                <span class="block text-xs">Introduce yourself, include some notable achievements and your hobbies.</span>
+                                <textarea name="biography" class="border w-full" rows="10"></textarea>
+                            </div>
+                            
+
                         </div>
                     </div>
                 </div>
@@ -446,6 +472,72 @@
                         </div>
                     </div>
 
+                </div>
+                <div v-if="data == 'payment'">
+                    <div class="payment_wrapper">
+                        <div class="grid grid-cols-2 gap-5">                            
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="firstname"> First name</label>
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>                            
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="lastname"> Last name</label>
+                                <input type="text" class="form-control" placeholder="Last Name">
+                            </div>      
+                        </div>
+
+                        <div class="my-5">
+                            <label class="font-bold" for="dob"> Date of Birth</label>                            
+                            <div class="grid grid-cols-3 gap-5">
+                                <div class="col-span-3 xs:col-span-3 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                    <input type="text" class="form-control" placeholder="Year YYYY">
+                                </div>
+                                <div class="col-span-3 xs:col-span-3 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                    <label class="font-bold" for=""></label>
+                                    <input type="text" class="form-control" placeholder="January">
+                                </div>
+                                <div class="col-span-3 xs:col-span-3 sm:col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                    <label class="font-bold" for=""></label>
+                                    <input type="text" class="form-control">
+                                </div>                              
+                            </div>
+                        </div>
+
+                        <div class="my-5 grid grid-cols-2 gap-5">                            
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="address"> Address</label>
+                                <select name="address" class="form-control">
+                                    <option value=""></option>
+                                </select>
+                            </div>                            
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="lastname"> Address 2optional</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>      
+                        </div>
+
+                        <div class="my-5 grid grid-cols-2 gap-5">                            
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="city"> City</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>                            
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="postal"> Postal/Zip Code</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1">
+                                <label class="font-bold" for="postal"> Country</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>      
+                        </div>
+
+                    </div>
+                </div>
+                <div v-if="data == 'skills'">
+                    <setting-skills></setting-skills>
+                </div>
+                <div v-if="data == 'settings_payment'">
+                    <settings-payment></settings-payment>
                 </div>
             </div>
         </div>
