@@ -1,11 +1,11 @@
 <template>
   <div class="h-screen fade">
     <mainheader></mainheader>
-    <div class="pb-10">
+    <div class="">
       <div class="grid grid-cols-1 p-10">
-        <div>
+        <!-- <div>
           <p class="greeting-title">Good Afternoon Lawal!</p>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="px-10">

@@ -5,7 +5,7 @@
     <div
       class="hallOfFame_left flex flex-col border-r border-gray-300 border-solid"
     >
-      <div class="p-5 pb-20">
+      <div class="p-5 pb-10">
         <h1 class="text-lg mb-2">LogicBoxes / OrderBox</h1>
         <span class="text-xs text-gray-400 block">OrderBox VDP</span>
         <div class="mt-7 mb-3">

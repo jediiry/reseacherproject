@@ -166,12 +166,12 @@ body {
 }
 .form-control {
   margin: 15px 0px;
-  padding: 0.7rem;
+  padding: 0.5rem;
   color: #000;
   display: block;
   width: 100%;
   border: 1px solid #cfcfcf;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .form-control:focus {
   outline: none;
@@ -185,6 +185,7 @@ body {
 .custom-select select {
   width: 100%;
   background-color: transparent;
+  border-color: gray;
 }
 .custom-select select:focus {
   outline: none;

@@ -2,7 +2,7 @@
   <div class="h-screen fade">
     <mainheader></mainheader>
     <div class="p-10">
-      <h1 class="font-one mb-2">CrowdStream</h1>
+      <h1 class="text-xl mb-2">CrowdStream</h1>
       <p class="font-two text-gray-500 mb-10">
         CrowdStream is a showcase of accepted and disclosed submissions on
         participating programs.

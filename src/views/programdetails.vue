@@ -1,7 +1,8 @@
 <template>
   <div class="grid grid-cols-7 mainfade">
     <sidebar></sidebar>
-    <div class="col-start-2 col-span-11 main_content">
+    <div class="col-start-2 h-screen overflow-hidden col-span-11 main_content">
+      <mainheader></mainheader>
       <!-- <program></program> -->
       <!-- <program-two></program-two> -->
       <program-details></program-details>
@@ -22,6 +23,7 @@ import programDetails from "../components/program/programDetails.vue";
 
 // @ is an alias to /src
 import sidebar from "../components/sidebar/sidebar.vue";
+import mainheader from "../components/header/header";
 
 export default {
   name: "programdetails",
@@ -30,6 +32,7 @@ export default {
     // Program,
     // ProgramTwo,
     programDetails,
+    mainheader,
     // submitProgram,
     // hanger,
     // noSubmissiosn

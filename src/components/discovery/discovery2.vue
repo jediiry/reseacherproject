@@ -10,7 +10,7 @@
     </div>
 
     <div class="px-10 pb-5">
-      <span class="text-2xl pink mr-6">Just for you</span>
+      <span class="text-2xl pink mr-6">Messages</span>
       <span class="text-2xl">Features</span>
     </div>
 
@@ -44,7 +44,7 @@
         </div>
 
         <div class="px-10 pb-5">
-            <span class="text-2xl pink mr-6">Just for you</span>
+            <span class="text-2xl pink mr-6">Messages</span>
             <span class="text-2xl">Features</span>
         </div>
 
